@@ -1,5 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import ThankYou from "./thankyou";
+import { useLang } from "./LanguageContext";
+
 
 import './styles/global.css';
 
@@ -8,6 +10,8 @@ import logo from './assets/images/logo11.png';
 import { useState } from "react";
 
 export default function App() {
+  const { t, changeLanguage, lang } = useLang();
+
   const [menuOpen, setMenuOpen] = useState(false);
 
 
@@ -34,7 +38,7 @@ export default function App() {
       <div className="gold-particles" id="goldParticles"></div>
 
       {/* === LUXURY HEADER === */}
-      <header className="luxury-header">
+      <header className="luxury-header" >
         <a href="#" className="brand">
           <div className="brand-logo">
             <img src={logo} alt="VintageCAR Logo" />
@@ -44,7 +48,7 @@ export default function App() {
 
         <nav className="nav">
   <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
-    <li><a href="#home" className="nav-link" onClick={() => setMenuOpen(false)}>POCETNA</a></li>
+    <li><a href="#home" className="nav-link" onClick={() => setMenuOpen(false)}>t("POCETNA")</a></li>
     <li><a href="#about" className="nav-link" onClick={() => setMenuOpen(false)}>O NAMA</a></li>
     <li><a href="#fleet" className="nav-link" onClick={() => setMenuOpen(false)}>VOZILA</a></li>
     <li><a href="#contact" className="nav-link" onClick={() => setMenuOpen(false)}>KONTAKT</a></li>
@@ -58,7 +62,20 @@ export default function App() {
 >
   <i className="fas fa-gem"></i> REZERVISI
 </button>
-
+<div className="lang-switch">
+  <img
+    src="/flags/rs.svg"
+    alt="Serbian"
+    onClick={() => changeLanguage("sr")}
+    className={lang === "sr" ? "active" : ""}
+  />
+  <img
+    src="/flags/gb.svg"
+    alt="English"
+    onClick={() => changeLanguage("en")}
+    className={lang === "en" ? "active" : ""}
+  />
+</div>
   <button
     className="menu-toggle"
     aria-label="Toggle menu"
@@ -421,7 +438,7 @@ export default function App() {
         <div className="booking-container">
           <div className="booking-form">
             <form
-              action="https://formsubmit.co/zivkovic.nadja03@gmail.com"
+              action="https://formsubmit.co/info@vintagecar.rs"
               method="POST"
             >
               <input type="hidden" name="_next" value="http://vintagecar.rs/thank-you" />

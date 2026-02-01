@@ -3249,6 +3249,29 @@ padding-bottom: 5%;
   .fleet-section{
     padding-top: 3.5rem;
   }
+
+  .lang-switch {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .lang-switch img {
+    width: 22px;
+    height: 16px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  .lang-switch img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .lang-switch img.active {
+    opacity: 1;
+  }
+  
   
   
   
