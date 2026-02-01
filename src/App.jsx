@@ -424,7 +424,7 @@ export default function App() {
               action="https://formsubmit.co/zivkovic.nadja03@gmail.com"
               method="POST"
             >
-              <input type="hidden" name="_next" value="http://localhost:5173/thank-you" />
+              <input type="hidden" name="_next" value="http://vintagecar.rs/thank-you" />
 
               <input type="hidden" name="_subject" value="Nova rezervacija - Vintage Car" />
               <input type="hidden" name="_template" value="table" />
