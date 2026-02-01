@@ -48,7 +48,7 @@ export default function App() {
 
         <nav className="nav">
   <ul className={`nav-menu ${menuOpen ? "open" : ""}`}>
-    <li><a href="#home" className="nav-link" onClick={() => setMenuOpen(false)}>t("POCETNA")</a></li>
+    <li><a href="#home" className="nav-link" onClick={() => setMenuOpen(false)}>{t("POCETNA")}</a></li>
     <li><a href="#about" className="nav-link" onClick={() => setMenuOpen(false)}>O NAMA</a></li>
     <li><a href="#fleet" className="nav-link" onClick={() => setMenuOpen(false)}>VOZILA</a></li>
     <li><a href="#contact" className="nav-link" onClick={() => setMenuOpen(false)}>KONTAKT</a></li>
