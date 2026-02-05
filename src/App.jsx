@@ -298,7 +298,7 @@ export default function App() {
             {/* FRONT */}
             <div className="service-front">
               <img
-                src="/mece.jpg"
+                src="/mece_ai.PNG"
                 alt="Mercedes V Class"
                 className="card-image"
               />
@@ -354,7 +354,7 @@ export default function App() {
             {/* FRONT */}
             <div className="service-front">
               <img
-                src="/skoda2.jpg"
+                src="/skoda_ai.PNG"
                 alt="Škoda Superb"
                 className="card-image"
               />
