@@ -16,6 +16,12 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--light-text);
@@ -307,6 +313,7 @@ pointer-events: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    padding-bottom: 0.15em;
 
     /* line-height: 1.1; */
     opacity: 0;
@@ -2889,7 +2896,7 @@ padding-bottom: 5%;
       }
 
       body {
-        padding-right: 12px;   /* adjust: 8–16px is typical */
+        padding-right: 0;
         box-sizing: border-box;
       }
       .hero-image{
@@ -2954,7 +2961,7 @@ padding-bottom: 5%;
 
     .values {
       height: auto; 
-      padding-left: 13px;           /* ⬅ allow multiple rows */
+      /* padding-left: 13px;           ⬅ allow multiple rows */
     }
   
     .values-list {
