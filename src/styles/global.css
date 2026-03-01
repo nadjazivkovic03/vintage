@@ -303,6 +303,10 @@ pointer-events: none;
     font-size: 5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #BF9B30, #FFD700, #D4AF37, #FFC200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
     /* line-height: 1.1; */
     opacity: 0;
@@ -1593,7 +1597,6 @@ background: rgba(201,162,77,0.6);
 }
 
 /* Titles – richer gold */
-.hero-title,
 .section-title,
 .stat-number {
 background: var(--gradient-gold);
@@ -1719,7 +1722,6 @@ letter-spacing: 4px;
 }
 
 /* 6. Titles → flyer hierarchy */
-.hero-title,
 .section-title,
 .stat-number {
 background: var(--gradient-gold);
