@@ -2742,7 +2742,7 @@ padding-bottom: 5%;
 
     /* HEADER CONTAINER */
     .luxury-header {
-      padding: 24px 4% 24px;
+      padding: 24px 4% 24px 0;
       height: auto;
     }
   
@@ -2752,14 +2752,14 @@ padding-bottom: 5%;
     }
   
     .brand-logo {
-      width: 35vw;
+      width: 44vw;
       height: auto;
       margin: 0;
       padding: 0;
     }
 
     .brand-logo img {
-      width: 35vw;
+      width: 44vw;
       height: auto;
     }
 
