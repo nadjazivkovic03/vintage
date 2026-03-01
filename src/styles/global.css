@@ -3006,6 +3006,9 @@ padding-bottom: 5%;
     .brand-logo{
         padding-top: 0;
     }
+    .hero-title {
+        margin-top: 3rem;
+    }
     .about-section{
         padding-bottom: 50px;
         padding-top: 50px;
