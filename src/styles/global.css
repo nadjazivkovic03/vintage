@@ -2183,7 +2183,7 @@ padding-bottom: 5%;
     }
   
     .brand-logo {
-      width: 38vw;
+      width: 100%;
       height: auto;
       margin: 0;
     }
@@ -2742,25 +2742,26 @@ padding-bottom: 5%;
 
     /* HEADER CONTAINER */
     .luxury-header {
-      padding: 24px 4% 24px 0;
+      padding: 24px 4% 24px 8px;
       height: auto;
     }
   
     /* LEFT: LOGO + NAME */
     .brand {
-      gap: 8px;
+      gap: 0;
       justify-content: flex-start;
+      width: 50%;
     }
 
     .brand-logo {
-      width: 38vw;
+      width: 100%;
       height: auto;
-      margin: 0 0 0 -10px;
+      margin: 0;
       padding: 0;
     }
 
     .brand-logo img {
-      width: 38vw;
+      width: 100%;
       height: auto;
     }
 
@@ -2851,14 +2852,15 @@ padding-bottom: 5%;
       .header-actions {
         display: flex;
         align-items: center;
-        flex-wrap: nowrap;           /* ⬅ CRITICAL */
+        justify-content: flex-end;
+        flex-wrap: nowrap;
         white-space: nowrap;
-        min-width: 0;
+        width: 50%;
       }
-    
+
       /* SHRINK LOGO HARD */
       .brand-logo {
-        width: 38vw;
+        width: 100%;
         flex-shrink: 1;
       }
     
