@@ -3008,6 +3008,10 @@ padding-bottom: 5%;
     }
     .hero-title {
         margin-top: 1.5rem;
+        background: linear-gradient(45deg, #BF9B30, #FFD700, #D4AF37, #FFC200);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
     .about-section{
         padding-bottom: 50px;
