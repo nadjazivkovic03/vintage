@@ -91,7 +91,7 @@ export default function App() {
       {/* === HERO SECTION === */}
       <section className="hero-section" id="home">
         <div className="hero-content">
-          <h1 className="hero-title">Elegance on Wheels</h1>
+          <h1 className="hero-title">Luxury in Motion</h1>
           <p className="hero-subtitle">
             {t("Dobrodošli u svet vrhunskog luksuza i besprekornog komfora. Naša rent a car ponuda obuhvata pažljivo odabrana luksuzna vozila namenjena onima koji ne pristaju na kompromis. Bilo da putujete poslovno ili privatno, obezbeđujemo iskustvo vožnje koje odiše stilom, sigurnošću i prestižom.")}
           </p>
