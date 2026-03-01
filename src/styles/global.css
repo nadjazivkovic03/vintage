@@ -3032,6 +3032,10 @@ padding-bottom: 5%;
     padding-left: 13px !important;
     padding-right: 13px !important;
   }
+  .hero-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
   /* CONTACT — MINIMAL LUXURY LIST */
   .contact-container {
     display: flex;
