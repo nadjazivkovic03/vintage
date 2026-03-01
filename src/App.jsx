@@ -448,7 +448,7 @@ export default function App() {
         <div className="booking-container">
           <div className="booking-form">
             <form
-              action="https://formsubmit.co/info@vintagecar.rs"
+              action="https://formsubmit.co/info@wintagecar.rs"
               method="POST"
             >
               <input type="hidden" name="_next" value="http://vintagecar.rs/thank-you" />
@@ -531,7 +531,7 @@ export default function App() {
 <div className="contact-item">
   <i className="fas fa-map-marker-alt"></i>
   <span className="contact-text">
-    <strong>{t("Adresa")}:    </strong> {t("Beograd, Srbija")}
+    <strong>{t("Adresa")}:    </strong> {t("Tosin bunar 222, 11070 Beograd")}
   </span>
 </div>
         </div>
