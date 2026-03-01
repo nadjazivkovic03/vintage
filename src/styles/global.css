@@ -3029,8 +3029,8 @@ padding-bottom: 5%;
      /* Pull hero section closer to header */
   .hero-section {
     padding-top: calc(var(--header-height) - 40px) !important;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 13px !important;
+    padding-right: 13px !important;
   }
   /* CONTACT — MINIMAL LUXURY LIST */
   .contact-container {
