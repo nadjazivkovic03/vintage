@@ -26,7 +26,7 @@ export const translations = {
     "Aerodrom Transfer": "Airport Transfer",
     "Lagodan prevoz do i od Aerodroma":
       "Comfortable transportation to and from the airport",
-    "Pratimo Vas let": "Flight monitoring",
+    "Pracenje leta": "Flight monitoring",
     "Docekujemo Vas na aerodromu ili na vasoj adresi":
       "Pick-up at the airport or at your address",
     "Preuzimamo prtljag": "Luggage handling",
@@ -37,8 +37,8 @@ export const translations = {
     "Cena : €50": "Price: €50",
     "Zakazi": "Book",
 
-    "Rentiranje vozila sa vozačem (8 sati)":
-      "Chauffeur Service (8 hours)",
+    "Rentiranje vozila sa vozačem":
+      "Chauffeur Service",
     "Vaš privatni vozač na raspolaganju":
       "Your private driver at your disposal",
     "Odabir datuma": "Date selection",
@@ -83,8 +83,12 @@ export const translations = {
       "Kontaktirajte nas za rezervacije i dodatne informacije" : "Contact us for reservations and additional information",
         "Adresa" : "Adress",
         "Beograd, Srbija" : "Belgrade, Serbia",
-        
+        "Profesionalni vozač" : "Professional driver",
+        "Domet 250km" : "Range 250km",
 
+        "Cena u zavisnosti od broja lokacija" : "Price depending on the number of locations",
+        "po dogovoru" : "negotiable",
+        "Sa vozačem (8 sati) - domet 250km" : "With Driver (8 hours) - range 250km",
 
     }
   };

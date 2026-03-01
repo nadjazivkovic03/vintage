@@ -7,12 +7,28 @@ import './styles/global.css';
 
 import logo from './assets/images/logo7.PNG';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+const heroImages = [
+  '/slika3.JPG',
+  '/slika2.JPG',
+  '/slika4.JPG',
+  '/slika1.JPG',
+  '/slika5.JPG',
+];
 
 export default function App() {
   const { t, changeLanguage, lang } = useLang();
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide(prev => (prev + 1) % heroImages.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
 
   // === JS HELPERS (FROM ORIGINAL HTML) ===
@@ -90,6 +106,17 @@ export default function App() {
 
       {/* === HERO SECTION === */}
       <section className="hero-section" id="home">
+        <div className="hero-slideshow">
+          {heroImages.map((img, i) => (
+            <div
+              key={img}
+              className={`hero-slide ${i === currentSlide ? 'active' : ''}`}
+              style={{ backgroundImage: `url(${img})` }}
+            />
+          ))}
+          <div className="hero-overlay" />
+        </div>
+
         <div className="hero-content">
           <h1 className="hero-title">Luxury in Motion</h1>
           <p className="hero-subtitle">
@@ -105,12 +132,6 @@ export default function App() {
             </button>
           </div>
         </div>
-
-        {/* FLOATING CARS */}
-        <div className="hero-image">
-  <img src="/flfl.png" alt="Luxury vehicle" />
-</div>
-
       </section>
             {/* === VALUES SECTION === */}
             <section className="values" id="values">
@@ -163,16 +184,15 @@ export default function App() {
       </p>
 
       <ul className="service-features">
-        <li><i className="fas fa-check"></i> {t("Pratimo Vas let")}</li>
+        <li><i className="fas fa-check"></i> {t("Pracenje leta")}</li>
         <li><i className="fas fa-check"></i> {t("Docekujemo Vas na aerodromu ili na vasoj adresi")}</li>
         <li><i className="fas fa-check"></i> {t("Preuzimamo prtljag")}</li>
         <li><i className="fas fa-check"></i> {t("Prevozimo Vas na destinaciju u luksuznom vozilu")}</li>
-        <li><i className="fas fa-check"></i> {t("Dodatna lokacija: +10€")}</li>
-        <li><i className="fas fa-check"></i> {t("Cena po vozilu")}</li>
+        <li><i className="fas fa-check"></i> {t("Cena u zavisnosti od broja lokacija")}</li>
       </ul>
 
       <div className="service-cta">
-        <span className="service-price">{t("Cena : €50")}</span>
+        {/* <span className="service-price"></span> */}
         <button
           className="service-btn"
           onClick={() => scrollToSection("booking")}
@@ -189,13 +209,15 @@ export default function App() {
           <i className="fas fa-user-tie"></i>
         </div>
         <h3 className="service-title">
-          {t("Rentiranje vozila sa vozačem (8 sati)")}
+          {t("Rentiranje vozila sa vozačem")}
         </h3>
         <p className="service-description">
           {t("Vaš privatni vozač na raspolaganju")}
         </p>
 
         <ul className="service-features">
+          <li><i className="fas fa-check"></i> {t("Domet 250km")}</li>
+          <li><i className="fas fa-check"></i> {t("Profesionalni vozač")}</li>
           <li><i className="fas fa-check"></i> {t("Odabir datuma")}</li>
           {/* <li><i className="fas fa-check"></i> {t("Privatnost")}</li> */}
           <li><i className="fas fa-check"></i> {t("Izbor vozila")}</li>
@@ -323,7 +345,7 @@ export default function App() {
               <h3 className="service-title">Mercedes-Benz V Class 2025</h3>
 
               <div className="price-block">
-                <h4>{t("Sa vozačem (8 sati)")}</h4>
+                <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
                 <div className="price-line">
                   <span>{t("Fiksna cena")}</span>
                   <strong>€270</strong>
@@ -332,11 +354,10 @@ export default function App() {
 
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
-                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€200</strong></div>
-                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€150</strong></div>
-                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€120</strong></div>
-                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€105</strong></div>
-                <div className="price-line"><span>31+ {t("dana")}</span><strong>€85</strong></div>
+                <div className="price-line"><span>1–7 {t("dana")}</span><strong>€150</strong></div>
+                <div className="price-line"><span>7-14 {t("dana")}</span><strong>€130</strong></div>
+                <div className="price-line"><span>14-31 {t("dana")}</span><strong>€110</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>{t("po dogovoru")}</strong></div>
               </div>
 
               <button
@@ -379,7 +400,7 @@ export default function App() {
               <h3 className="service-title">Škoda Superb L&amp;K 2025</h3>
 
               <div className="price-block">
-                <h4>{t("Sa vozačem (8 sati)")}</h4>
+                <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
                 <div className="price-line">
                   <span>{t("Fiksna cena")}</span>
                   <strong>€220</strong>
@@ -388,11 +409,10 @@ export default function App() {
 
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
-                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€110</strong></div>
-                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€90</strong></div>
-                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€80</strong></div>
-                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€65</strong></div>
-                <div className="price-line"><span>31+ {t("dana")}</span><strong>€55</strong></div>
+                <div className="price-line"><span>1–7 {t("dana")}</span><strong>€90</strong></div>
+                <div className="price-line"><span>7–14 {t("dana")}</span><strong>€75</strong></div>
+                <div className="price-line"><span>14–31 {t("dana")}</span><strong>€65</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>{t("po dogovoru")}</strong></div>
               </div>
 
               <button
