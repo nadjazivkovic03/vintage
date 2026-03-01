@@ -2758,6 +2758,11 @@ padding-bottom: 5%;
       padding: 0;
     }
 
+    .brand-logo img {
+      width: 58vw;
+      height: auto;
+    }
+
     .brand-name {
         font-size: clamp(1.35rem, 3.5vw, 1.7rem);
 
