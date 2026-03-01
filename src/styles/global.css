@@ -2183,7 +2183,7 @@ padding-bottom: 5%;
     }
   
     .brand-logo {
-      width: 58vw;
+      width: 38vw;
       height: auto;
       margin: 0;
     }
@@ -2755,7 +2755,7 @@ padding-bottom: 5%;
     .brand-logo {
       width: 38vw;
       height: auto;
-      margin: 0 0 0 -6px;
+      margin: 0 0 0 -10px;
       padding: 0;
     }
 
@@ -2858,8 +2858,8 @@ padding-bottom: 5%;
     
       /* SHRINK LOGO HARD */
       .brand-logo {
-        width: 58vw;
-        flex-shrink: 0;              /* ⬅ CRITICAL */
+        width: 38vw;
+        flex-shrink: 1;
       }
     
       /* SHRINK NAME */
