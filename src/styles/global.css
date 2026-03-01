@@ -16,7 +16,11 @@
     box-sizing: border-box;
 }
 
-html, body {
+html {
+    width: 100%;
+}
+
+body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
