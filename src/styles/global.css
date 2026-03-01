@@ -2944,7 +2944,7 @@ padding-bottom: 5%;
       }
      .services-section{
         padding-left: 13px;
-        padding-right: 0px;
+        padding-right: 13px;
      } 
 
      .services-section .section-header p {
@@ -2995,19 +2995,19 @@ padding-bottom: 5%;
     .fleet-section{
         padding-bottom: 50px;
         padding-top: 50px;
-        padding-right: 0px;
+        padding-right: 13px;
         padding-left: 13px;
     }
     .booking-section{
         padding-bottom: 50px;
         padding-top: 50px;
-        padding-right: 0px;
+        padding-right: 13px;
         padding-left: 13px;
     }
     .contact-section{
         padding-bottom: 50px;
         padding-top: 50px;
-        padding-right: 0px;
+        padding-right: 13px;
         padding-left: 13px;
     }
     .brand-name{
@@ -3023,7 +3023,7 @@ padding-bottom: 5%;
     .about-section{
         padding-bottom: 50px;
         padding-top: 50px;
-        padding-right: 0px;
+        padding-right: 13px;
         padding-left: 13px;
     }
      /* Pull hero section closer to header */
