@@ -5,7 +5,7 @@ import { useLang } from "./LanguageContext";
 
 import './styles/global.css';
 
-import logo from './assets/images/logo11.png';
+import logo from './assets/images/logo7.PNG';
 
 import { useState } from "react";
 
@@ -43,7 +43,6 @@ export default function App() {
           <div className="brand-logo">
             <img src={logo} alt="VintageCAR Logo" />
           </div>
-          <div className="brand-name">Vintage CAR</div>
         </a>
 
         <nav className="nav">
