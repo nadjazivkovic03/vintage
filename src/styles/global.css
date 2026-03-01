@@ -2742,7 +2742,7 @@ padding-bottom: 5%;
 
     /* HEADER CONTAINER */
     .luxury-header {
-      padding: 10px 4%;
+      padding: 24px 4% 4px;
       height: auto;
     }
   
@@ -2755,8 +2755,9 @@ padding-bottom: 5%;
       width: 33vw;
       height: auto;
       margin: 0;
+      padding: 0;
     }
-  
+
     .brand-name {
         font-size: clamp(1.35rem, 3.5vw, 1.7rem);
 
@@ -2995,7 +2996,7 @@ padding-bottom: 5%;
         font-size: 1.25rem;
     }
     .brand-logo{
-        padding-top: 10px;
+        padding-top: 0;
     }
     .about-section{
         padding-bottom: 50px;
