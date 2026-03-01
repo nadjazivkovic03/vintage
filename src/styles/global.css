@@ -2749,8 +2749,9 @@ padding-bottom: 5%;
     /* LEFT: LOGO + NAME */
     .brand {
       gap: 8px;
+      justify-content: flex-start;
     }
-  
+
     .brand-logo {
       width: 44vw;
       height: auto;
