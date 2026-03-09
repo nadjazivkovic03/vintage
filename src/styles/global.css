@@ -2761,15 +2761,13 @@ padding-bottom: 5%;
     background: none;
     border: none;
     cursor: pointer;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 6px;
-  
-    width: 32px;
-    height: 32px;
-
+    width: 44px;
+    height: 44px;
+    padding: 6px;
   }
   
   .menu-toggle span {
@@ -2809,6 +2807,7 @@ padding-bottom: 5%;
       background: rgba(8, 8, 8, 0.97);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 0;
       padding: 0;
       max-height: 0;
       overflow: hidden;

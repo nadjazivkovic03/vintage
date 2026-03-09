@@ -30,6 +30,17 @@ export default function App() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+    const handleClickOutside = (e) => {
+      if (!e.target.closest('.luxury-header')) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, [menuOpen]);
+
 
   // === JS HELPERS (FROM ORIGINAL HTML) ===
   const toggleServicePrice = (e) => {
