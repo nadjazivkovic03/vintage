@@ -342,109 +342,143 @@ export default function App() {
 
         <div className="fleet-grid">
 
-          {/* MERCEDES V CLASS */}
+          {/* MERCEDES V 300 STANDARD */}
           <div className="fleet-card price-card">
-            {/* FRONT */}
             <div className="service-front">
-              <img
-                src="/mece_ai.jpg"
-                alt="Mercedes V Class"
-                className="card-image"
-              />
-
+              <img src="/mece_ai.jpg" alt="Mercedes V 300" className="card-image" />
               <div className="card-content">
-                <h3>Mercedes-Benz V Class 2025</h3>
-                {/* <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p> */}
-
-                <button
-                  className="luxury-btn"
-                  style={{ width: '100%', marginTop: '20px' }}
-                  onClick={toggleServicePrice}
-                >
+                <h3>Mercedes-Benz V 300 2025</h3>
+                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
                   {t("Pogledaj cenovnik")}
                 </button>
               </div>
             </div>
-
-            {/* BACK */}
             <div className="service-back">
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
-                <div className="price-line">
-                  <span>{t("Fiksna cena")}</span>
-                  <strong>€270</strong>
-                </div>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€270</strong></div>
               </div>
-
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
-                <div className="price-line"><span>1–7 {t("dana")}</span><strong>€150</strong></div>
-                <div className="price-line"><span>7-14 {t("dana")}</span><strong>€130</strong></div>
-                <div className="price-line"><span>14-31 {t("dana")}</span><strong>€110</strong></div>
-                <div className="price-line"><span>31+ {t("dana")}</span><strong>{t("po dogovoru")}</strong></div>
+                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€200</strong></div>
+                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€150</strong></div>
+                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€120</strong></div>
+                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€105</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>€85</strong></div>
               </div>
-
-              <button
-                className="luxury-btn back-btn"
-                onClick={toggleServicePrice}
-              >
-                {t("Nazad")}
-              </button>
+              <button className="luxury-btn back-btn" onClick={toggleServicePrice}>{t("Nazad")}</button>
             </div>
           </div>
 
-          {/* SKODA SUPERB */}
+          {/* MERCEDES V 300 4X4 EXCLUSIVE */}
           <div className="fleet-card price-card">
-            {/* FRONT */}
             <div className="service-front">
-              <img
-                src="/skoda_ai.jpg"
-                alt="Škoda Superb"
-                className="card-image"
-              />
-
+              <img src="/mece.jpg" alt="Mercedes V 300 4x4 Exclusive" className="card-image" />
               <div className="card-content">
-                <h3>Škoda Superb L&amp;K 2025</h3>
-                {/* <p>&nbsp;</p>
-                <p>&nbsp;</p>
-                <p>&nbsp;</p> */}
-
-                <button
-                  className="luxury-btn"
-                  style={{ width: '100%', marginTop: '20px' }}
-                  onClick={toggleServicePrice}
-                >
+                <h3>Mercedes-Benz V 300 4x4 Exclusive 2025</h3>
+                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
                   {t("Pogledaj cenovnik")}
                 </button>
               </div>
             </div>
-
-            {/* BACK */}
             <div className="service-back">
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
-                <div className="price-line">
-                  <span>{t("Fiksna cena")}</span>
-                  <strong>€220</strong>
-                </div>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€300</strong></div>
               </div>
-
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
-                <div className="price-line"><span>1–7 {t("dana")}</span><strong>€90</strong></div>
-                <div className="price-line"><span>7–14 {t("dana")}</span><strong>€75</strong></div>
-                <div className="price-line"><span>14–31 {t("dana")}</span><strong>€65</strong></div>
-                <div className="price-line"><span>31+ {t("dana")}</span><strong>{t("po dogovoru")}</strong></div>
+                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€230</strong></div>
+                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€180</strong></div>
+                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€150</strong></div>
+                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€135</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>€115</strong></div>
               </div>
+              <button className="luxury-btn back-btn" onClick={toggleServicePrice}>{t("Nazad")}</button>
+            </div>
+          </div>
 
-              <button
-                className="luxury-btn back-btn"
-                onClick={toggleServicePrice}
-              >
-                {t("Nazad")}
-              </button>
+          {/* SKODA SUPERB L&K */}
+          <div className="fleet-card price-card">
+            <div className="service-front">
+              <img src="/skoda_ai.jpg" alt="Škoda Superb L&K" className="card-image" />
+              <div className="card-content">
+                <h3>Škoda Superb L&amp;K 2025</h3>
+                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                  {t("Pogledaj cenovnik")}
+                </button>
+              </div>
+            </div>
+            <div className="service-back">
+              <div className="price-block">
+                <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€220</strong></div>
+              </div>
+              <div className="price-block">
+                <h4>{t("Bez vozača")}</h4>
+                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€110</strong></div>
+                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€90</strong></div>
+                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€80</strong></div>
+                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€65</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>€55</strong></div>
+              </div>
+              <button className="luxury-btn back-btn" onClick={toggleServicePrice}>{t("Nazad")}</button>
+            </div>
+          </div>
+
+          {/* SKODA SUPERB 4X4 L&K */}
+          <div className="fleet-card price-card">
+            <div className="service-front">
+              <img src="/skoda2.jpg" alt="Škoda Superb 4x4 L&K" className="card-image" />
+              <div className="card-content">
+                <h3>Škoda Superb 4x4 L&amp;K 2025</h3>
+                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                  {t("Pogledaj cenovnik")}
+                </button>
+              </div>
+            </div>
+            <div className="service-back">
+              <div className="price-block">
+                <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€240</strong></div>
+              </div>
+              <div className="price-block">
+                <h4>{t("Bez vozača")}</h4>
+                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€125</strong></div>
+                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€105</strong></div>
+                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€95</strong></div>
+                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€80</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>€70</strong></div>
+              </div>
+              <button className="luxury-btn back-btn" onClick={toggleServicePrice}>{t("Nazad")}</button>
+            </div>
+          </div>
+
+          {/* SKODA SUPERB 4X4 SELECTION */}
+          <div className="fleet-card price-card">
+            <div className="service-front">
+              <img src="/skoda2.jpg" alt="Škoda Superb 4x4 Selection" className="card-image" />
+              <div className="card-content">
+                <h3>Škoda Superb 4x4 Selection 2025</h3>
+                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                  {t("Pogledaj cenovnik")}
+                </button>
+              </div>
+            </div>
+            <div className="service-back">
+              <div className="price-block">
+                <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€220</strong></div>
+              </div>
+              <div className="price-block">
+                <h4>{t("Bez vozača")}</h4>
+                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€110</strong></div>
+                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€90</strong></div>
+                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€80</strong></div>
+                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€65</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>€55</strong></div>
+              </div>
+              <button className="luxury-btn back-btn" onClick={toggleServicePrice}>{t("Nazad")}</button>
             </div>
           </div>
 
@@ -568,7 +602,7 @@ export default function App() {
   <i className="fas fa-envelope"></i>
   <span className="contact-text">
     <strong>Email:    </strong>
-    <a href="mailto:info@vintagecar.rs">info@vintagecar.rs</a>
+    <a href="mailto:info@wintagecar.rs">info@wintagecar.rs</a>
   </span>
 </div>
 
