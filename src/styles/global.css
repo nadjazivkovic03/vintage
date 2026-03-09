@@ -290,8 +290,9 @@ pointer-events: none;
     height: calc(100vh - 220px);
     min-height: 400px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding-top: calc(var(--header-height, 140px) + 40px);
     position: relative;
     overflow: hidden;
 }
@@ -335,8 +336,11 @@ pointer-events: none;
 
 .hero-title {
     font-family: 'Cinzel', serif;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 7rem;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     margin-bottom: 1.5rem;
     color: #ffffff;
     padding-bottom: 0.15em;
@@ -2187,11 +2191,7 @@ HERO SUBTITLE – LOGO-STYLE ELEGANT FONT
 ========================================= */
 
 .hero-title {
-font-family: 'Playfair Display', serif;
-font-style: italic;
-letter-spacing: 1px;
-font-weight: 300;
-
+font-style: normal;
 }
 
 /* =========================================
@@ -2555,10 +2555,10 @@ padding-bottom: 5%;
     display: flex;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: calc(var(--header-height, 140px) + 40px);
     height: calc(100vh - 220px);
     min-height: 400px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
   }
 
