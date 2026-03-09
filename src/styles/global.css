@@ -509,26 +509,23 @@ pointer-events: none;
   
 
   .value-item {
-    aspect-ratio: 1 / 1;
-  
-    /* Circle size grows with screen, but never too small for text */
     min-width: 180px;
     max-width: 240px;
     width: 20vw;
-  
+
     background: rgba(26, 26, 26, 0.7);
-    border-radius: 50%;
+    border-radius: 16px;
     border: 1px solid rgba(212, 175, 55, 0.35);
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-  
-    padding: 18px; /* 🔑 ensures text never touches edge */
+
+    padding: 22px 18px;
     box-sizing: border-box;
-  
+
     transition: transform 0.3s ease;
   }
   
@@ -986,8 +983,8 @@ select.form-control {
     }
     
     .hero-section {
-        height: calc(100vh - 190px);
-        min-height: 350px;
+        height: calc(100vh - 300px);
+        min-height: 280px;
         align-items: center;
         justify-content: center;
     }
@@ -2958,7 +2955,7 @@ padding-bottom: 5%;
     }
   
     .value-item {
-      width: clamp(140px, 35vw, 220px);
+      width: 100%;
       max-width: none;
     }
   }
