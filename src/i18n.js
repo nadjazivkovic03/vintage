@@ -1,8 +1,10 @@
 export const translations = {
     en: {
         "POCETNA": "HOME",
+      "USLUGE": "SERVICES",
       "VOZILA": "FLEET",
       "O NAMA": "ABOUT US",
+      "REZERVACIJA": "BOOK",
       "KONTAKT": "CONTACT",
       "LUKSUZNI PREVOZ": "LUXURY TRANSPORT",
       "Premium vozačke usluge sa stilom":
@@ -73,6 +75,7 @@ export const translations = {
       
       "REZERVISITE SVOJU VOZNJU" : "BOOK YOUR RIDE",
       "Izaberite uslugu" : "Service selection",
+      "Izaberite vozilo" : "Vehicle selection",
       "Vozilo sa vozačem" : "Chauffeur Service",
       "Poseban zahtev" : "Special request",
       "Ime" : "First Name",
