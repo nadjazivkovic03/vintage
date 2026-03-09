@@ -2767,7 +2767,7 @@ padding-bottom: 5%;
     gap: 6px;
     width: 70px;
     height: 44px;
-    padding: 6px;
+    padding: 6px 0 6px 6px;
   }
 
   .menu-toggle span {
@@ -2852,7 +2852,7 @@ padding-bottom: 5%;
     display: flex;
     align-items: center;
     gap: 14px;
-    padding-right: 1%;
+    padding-right: 8px;
   }
   html, body {
     overflow-x: hidden;
