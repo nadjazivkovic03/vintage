@@ -521,6 +521,10 @@ pointer-events: none;
     margin-right: calc(-1 * var(--section-padding, 13px));
     width: calc(100% + 26px);
   }
+  .about-image img {
+    height: auto !important;
+    object-fit: unset !important;
+  }
 }
   .about-content {
     align-items: start;
