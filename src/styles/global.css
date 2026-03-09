@@ -2765,13 +2765,13 @@ padding-bottom: 5%;
     flex-direction: column;
     justify-content: center;
     gap: 6px;
-    width: 44px;
+    width: 56px;
     height: 44px;
     padding: 6px;
   }
-  
+
   .menu-toggle span {
-    width: 22px;
+    width: 36px;
     height: 2px;
     background: var(--primary-gold);
     border-radius: 2px;
