@@ -2948,12 +2948,12 @@ padding-bottom: 5%;
     /* HAMBURGER */
     .menu-toggle {
       display: flex;
-      width: 26px;
-      height: 26px;
+      width: 70px;
+      height: 44px;
     }
-  
+
     .menu-toggle span {
-      width: 18px;
+      width: 54px;
       height: 2px;
     }
     .luxury-header {
