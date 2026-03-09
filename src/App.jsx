@@ -34,7 +34,15 @@ export default function App() {
   // === JS HELPERS (FROM ORIGINAL HTML) ===
   const toggleServicePrice = (e) => {
     const card = e.target.closest('.price-card');
-    if (card) card.classList.toggle('active');
+    if (card) {
+      const isClosing = card.classList.contains('active');
+      card.classList.toggle('active');
+      if (isClosing) {
+        setTimeout(() => {
+          card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+      }
+    }
   };
 
   const scrollToSection = (id) => {
@@ -348,8 +356,6 @@ export default function App() {
 
             {/* BACK */}
             <div className="service-back">
-              <h3 className="service-title">Mercedes-Benz V Class 2025</h3>
-
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
                 <div className="price-line">
@@ -403,8 +409,6 @@ export default function App() {
 
             {/* BACK */}
             <div className="service-back">
-              <h3 className="service-title">Škoda Superb L&amp;K 2025</h3>
-
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
                 <div className="price-line">
