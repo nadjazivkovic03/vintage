@@ -2764,10 +2764,11 @@ padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 6px;
-    width: 70px;
+    width: 27px;
     height: 44px;
-    padding: 6px 0 6px 6px;
+    padding: 0;
   }
 
   .menu-toggle span {
@@ -2948,7 +2949,7 @@ padding-bottom: 5%;
     /* HAMBURGER */
     .menu-toggle {
       display: flex;
-      width: 70px;
+      width: 27px;
       height: 44px;
     }
 
