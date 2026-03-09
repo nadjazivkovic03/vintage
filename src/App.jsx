@@ -39,7 +39,10 @@ export default function App() {
       card.classList.toggle('active');
       if (isClosing) {
         setTimeout(() => {
-          card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const header = document.querySelector('.luxury-header');
+          const headerHeight = header ? header.offsetHeight : 0;
+          const top = card.getBoundingClientRect().top + window.scrollY - headerHeight;
+          window.scrollTo({ top, behavior: 'smooth' });
         }, 50);
       }
     }
