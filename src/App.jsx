@@ -480,7 +480,7 @@ export default function App() {
               action="https://formsubmit.co/info@wintagecar.rs"
               method="POST"
             >
-              <input type="hidden" name="_next" value="http://vintagecar.rs/thank-you" />
+              <input type="hidden" name="_next" value="https://www.wintagecar.rs/thank-you" />
 
               <input type="hidden" name="_subject" value="Nova rezervacija - Vintage Car" />
               <input type="hidden" name="_template" value="table" />
