@@ -89,7 +89,7 @@ export default function App() {
     <li><a href="#services" className="nav-link" onClick={() => setMenuOpen(false)}>{t("USLUGE")}</a></li>
     <li><a href="#fleet" className="nav-link" onClick={() => setMenuOpen(false)}>{t("VOZILA")}</a></li>
     <li><a href="#about" className="nav-link" onClick={() => setMenuOpen(false)}>{t("O NAMA")}</a></li>
-    <li><a href="#booking" className="nav-link" onClick={() => setMenuOpen(false)}>{t("REZERVACIJA")}</a></li>
+    <li className="nav-booking-item"><a href="#booking" className="nav-link" onClick={() => setMenuOpen(false)}>{t("REZERVACIJA")}</a></li>
     <li><a href="#contact" className="nav-link" onClick={() => setMenuOpen(false)}>{t("KONTAKT")}</a></li>
   </ul>
 </nav>
