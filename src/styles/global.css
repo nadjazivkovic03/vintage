@@ -2771,7 +2771,7 @@ padding-bottom: 5%;
   }
 
   .menu-toggle span {
-    width: 54px;
+    width: 27px;
     height: 2px;
     background: var(--primary-gold);
     border-radius: 2px;
@@ -2953,7 +2953,7 @@ padding-bottom: 5%;
     }
 
     .menu-toggle span {
-      width: 54px;
+      width: 27px;
       height: 2px;
     }
     .luxury-header {
