@@ -341,9 +341,9 @@ pointer-events: none;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     color: #ffffff;
-    padding-bottom: 0.15em;
+    padding-bottom: 0;
     white-space: nowrap;
     opacity: 0;
     transform: translateY(30px);
@@ -359,6 +359,46 @@ pointer-events: none;
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.hero-divider {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(255, 255, 255, 0.5) 30%,
+        rgba(255, 255, 255, 0.5) 70%,
+        transparent 100%
+    );
+    margin: 0.5rem auto 0.5rem;
+    opacity: 0;
+    animation: fadeIn 1s ease 1s forwards;
+}
+
+.hero-tagline {
+    font-size: 0.8rem;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.4rem;
+    opacity: 0;
+    animation: fadeIn 1s ease 1.2s forwards;
+}
+
+.hero-tagline::before {
+    content: '';
+}
+
+.hero-tagline::after {
+    content: '';
+}
+
+.hero-buttons .luxury-btn {
+    padding: 0.75rem 2rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
 }
 
 .hero-subtitle {

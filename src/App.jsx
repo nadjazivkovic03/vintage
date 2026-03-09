@@ -126,6 +126,9 @@ export default function App() {
             <span className="hero-word">Motion</span>
           </h1>
 
+          <div className="hero-divider" />
+          <p className="hero-tagline">{t("Rent a car & Chauffeur service")}</p>
+
           <div className="hero-buttons">
             <button
               className="luxury-btn"
