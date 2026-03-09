@@ -2852,7 +2852,7 @@ padding-bottom: 5%;
   .header-actions {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 24px;
     padding-right: 14px;
   }
   html, body {
