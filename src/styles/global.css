@@ -3167,17 +3167,58 @@ padding-bottom: 5%;
     padding-right: 0;
   }
   /* CONTACT — MINIMAL LUXURY LIST */
+  a.contact-item {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .contact-container {
     display: flex;
     flex-direction: column;
     gap: 22px;
     max-width: 520px;
-    margin: 40px auto 0;
+    margin: 40px 0 0;
+  }
+
+  .contact-social {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+  }
+
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+
+  .social-icon.whatsapp {
+    background: #25D366;
+    color: #fff;
+  }
+
+  .social-icon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: #fff;
   }
 
   .contact-item {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
+    justify-content: flex-start !important;
+    text-align: left !important;
     gap: 14px;
 
     padding: 0;
@@ -3188,10 +3229,11 @@ padding-bottom: 5%;
 
   /* ICON */
   .contact-item i {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: var(--primary-gold);
-    min-width: 26px;
+    min-width: 18px;
     text-align: center;
+    margin-bottom: 0 !important;
   }
 
   /* TEXT */
@@ -3206,22 +3248,6 @@ padding-bottom: 5%;
     letter-spacing: 0.5px;
   }
 
-  /* GOLD DIVIDER */
-  .contact-item::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    margin-top: 18px;
-
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(185,150,74,0.8),
-      transparent
-    );
-  }
-
   .contact-item:last-child::after {
     display: none;
   }
@@ -3231,7 +3257,8 @@ padding-bottom: 5%;
   }
   /* CONTACT — CLEAN ROW LAYOUT */
   .contact-item {
-    display: flex;
+    display: flex !important;
+    flex-direction: row !important;
     align-items: center;
     gap: 14px;
   }
@@ -3247,10 +3274,10 @@ padding-bottom: 5%;
   /* TEXT WRAPPER */
   .contact-text {
     display: flex;
-    gap: 6px;
+    gap: 4px;
     align-items: center;
-    flex-wrap: wrap;
-    font-size: 0.95rem;
+    flex-wrap: nowrap;
+    font-size: 0.78rem;
     color: #e6d6a3;
   }
 

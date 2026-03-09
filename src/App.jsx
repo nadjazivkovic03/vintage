@@ -12,7 +12,7 @@ import { useState, useEffect } from "react";
 const heroImages = [
   '/slika3.JPG',
   '/slika2.JPG',
-  '/slika4.JPG',
+  '/slika44.jpg',
   '/slika1.JPG',
   '/slika5.JPG',
 ];
@@ -539,27 +539,27 @@ export default function App() {
 
 
         <div className="contact-container">
-        <div className="contact-item">
+        <a className="contact-item" href="tel:+381606051001">
   <i className="fas fa-phone"></i>
-  <span className="contact-text">
-    <strong>{t("Telefon")}:    </strong>
-    <a href="tel:+381606051001">+381 60 605 1001</a>
-  </span>
-</div>
+  <span className="contact-text">+381 60 605 1001</span>
+</a>
 
-<div className="contact-item">
+<a className="contact-item" href="mailto:info@wintagecar.rs">
   <i className="fas fa-envelope"></i>
-  <span className="contact-text">
-    <strong>Email:    </strong>
-    <a href="mailto:info@wintagecar.rs">info@wintagecar.rs</a>
-  </span>
-</div>
+  <span className="contact-text">info@wintagecar.rs</span>
+</a>
 
-<div className="contact-item">
+<a className="contact-item" href="https://maps.google.com/?q=Tosin+bunar+222,+11070+Beograd" target="_blank" rel="noopener noreferrer">
   <i className="fas fa-map-marker-alt"></i>
-  <span className="contact-text">
-    <strong>{t("Adresa")}:    </strong> {t("Tosin bunar 222, 11070 Beograd")}
-  </span>
+  <span className="contact-text">{t("Tosin bunar 222, 11070 Beograd")}</span>
+</a>
+        <div className="contact-social">
+  <a href="https://wa.me/381606051001" target="_blank" rel="noopener noreferrer" className="social-icon whatsapp">
+    <i className="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://instagram.com/wincar_belgrade" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
+    <i className="fab fa-instagram"></i>
+  </a>
 </div>
         </div>
       </section>
