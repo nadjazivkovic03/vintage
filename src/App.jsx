@@ -231,106 +231,55 @@ export default function App() {
     </div>
 
     {/* CHAUFFEUR SERVICE */}
-    <div className="service-card price-card">
-      <div className="service-front">
-        <div className="service-icon">
-          <i className="fas fa-user-tie"></i>
-        </div>
-        <h3 className="service-title">
-          {t("Rentiranje vozila sa vozačem")}
-        </h3>
-        <p className="service-description">
-          {t("Vaš privatni vozač na raspolaganju")}
-        </p>
-
-        <ul className="service-features">
-          <li><i className="fas fa-check"></i> {t("Domet 250km")}</li>
-          <li><i className="fas fa-check"></i> {t("Profesionalni vozač")}</li>
-          <li><i className="fas fa-check"></i> {t("Odabir datuma")}</li>
-          {/* <li><i className="fas fa-check"></i> {t("Privatnost")}</li> */}
-          <li><i className="fas fa-check"></i> {t("Izbor vozila")}</li>
-        </ul>
-
-        <div className="service-cta">
-          <button className="service-btn" onClick={toggleServicePrice}>
-            {t("Pogledaj cenovnik")}
-          </button>
-        </div>
+    <div className="service-card">
+      <div className="service-icon">
+        <i className="fas fa-user-tie"></i>
       </div>
+      <h3 className="service-title">
+        {t("Rentiranje vozila sa vozačem")}
+      </h3>
+      <p className="service-description">
+        {t("Vaš privatni vozač na raspolaganju")}
+      </p>
 
-      <div className="service-back">
-        <h3 className="service-title">{t("Cenovnik")}</h3>
+      <ul className="service-features">
+        <li><i className="fas fa-check"></i> {t("Domet 250km")}</li>
+        <li><i className="fas fa-check"></i> {t("Profesionalni vozač")}</li>
+        <li><i className="fas fa-check"></i> {t("Odabir datuma")}</li>
+        <li><i className="fas fa-check"></i> {t("Izbor vozila")}</li>
+      </ul>
 
-        <div className="price-line">
-          <span>Mercedes-Benz V Class 2025</span>
-          <strong>€270</strong>
-        </div>
-
-        <div className="price-line">
-          <span>Škoda Superb 2025</span>
-          <strong>€220</strong>
-        </div>
-
-        <button className="service-btn back-btn" onClick={toggleServicePrice}>
-          {t("Nazad")}
+      <div className="service-cta">
+        <button className="service-btn" onClick={() => scrollToSection("booking")}>
+          {t("Zakazi")}
         </button>
       </div>
     </div>
 
     {/* LUXURY RENTAL – WITHOUT DRIVER */}
-    <div className="service-card price-card">
-      <div className="service-front">
-        <div className="service-icon">
-          <i className="fas fa-car"></i>
-        </div>
-        <h3 className="service-title">
-          {t("Iznajmljivanje luksuznog vozila")}
-        </h3>
-        <p className="service-description">
-          {t("Iznajmite luksuzno vozilo za sopstvenu vožnju.")}
-        </p>
-
-        <ul className="service-features">
-          <li><i className="fas fa-check"></i> {t("Potpuno osiguranje")}</li>
-          <li><i className="fas fa-check"></i> {t("Premium vozila")}</li>
-          <li><i className="fas fa-check"></i> {t("24/7 podrška")}</li>
-        </ul>
-
-        <div className="service-cta">
-          <button className="service-btn" onClick={toggleServicePrice}>
-            {t("Pogledaj cenovnik")}
-          </button>
-        </div>
+    <div className="service-card">
+      <div className="service-icon">
+        <i className="fas fa-car"></i>
       </div>
+      <h3 className="service-title">
+        {t("Iznajmljivanje luksuznog vozila")}
+      </h3>
+      <p className="service-description">
+        {t("Iznajmite luksuzno vozilo za sopstvenu vožnju.")}
+      </p>
 
-      <div className="service-back">
-        <h3 className="service-title">
-          {t("Cenovnik – Bez vozača")}
-        </h3>
+      <ul className="service-features">
+        <li><i className="fas fa-check"></i> {t("Potpuno osiguranje")}</li>
+        <li><i className="fas fa-check"></i> {t("Premium vozila")}</li>
+        <li><i className="fas fa-check"></i> {t("24/7 podrška")}</li>
+      </ul>
 
-              <div className="price-block">
-                <h4>Mercedes-Benz V Class 2025</h4>
-                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€200</strong></div>
-                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€150</strong></div>
-                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€120</strong></div>
-                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€105</strong></div>
-                <div className="price-line"><span>31+ {t("dana")}</span><strong>€85</strong></div>
-              </div>
-
-              <div className="price-block">
-                <h4>Škoda Superb L&amp;K 2025</h4>
-                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€110</strong></div>
-                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€90</strong></div>
-                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€80</strong></div>
-                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€65</strong></div>
-                <div className="price-line"><span>31+ {t("dana")}</span><strong>€55</strong></div>
-              </div>
-
-              <button className="service-btn back-btn" onClick={toggleServicePrice}>
-                {t("Nazad")}
-              </button>
-            </div>
-          </div>
+      <div className="service-cta">
+        <button className="service-btn" onClick={() => scrollToSection("booking")}>
+          {t("Zakazi")}
+        </button>
+      </div>
+    </div>
 
         </div>
       </section>
