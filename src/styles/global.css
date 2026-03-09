@@ -1508,6 +1508,27 @@ display: none;
 display: block;
 }
 
+/* Fleet cards: price drops below instead of replacing */
+.fleet-card.price-card {
+    min-height: auto;
+}
+
+.fleet-card.price-card .service-back {
+    display: none;
+    overflow: hidden;
+}
+
+.fleet-card.price-card.active .service-front {
+    display: block;
+}
+
+.fleet-card.price-card.active .service-back {
+    display: block;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+}
+
 /* Price layout */
 .price-line {
 display: flex;
