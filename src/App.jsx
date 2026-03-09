@@ -103,7 +103,7 @@ export default function App() {
   />
 </div>
   <button
-    className="menu-toggle"
+    className={`menu-toggle ${menuOpen ? "open" : ""}`}
     aria-label="Toggle menu"
     onClick={() => setMenuOpen(prev => !prev)}
   >

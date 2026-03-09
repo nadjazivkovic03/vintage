@@ -2778,6 +2778,19 @@ padding-bottom: 5%;
     background: var(--primary-gold);
     border-radius: 2px;
     display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .menu-toggle {
@@ -2787,36 +2800,53 @@ padding-bottom: 5%;
 
   @media (max-width: 1024px) {
 
-    /* hide desktop nav */
     .nav-menu {
-      position: absolute;
-      top: var(--header-height);
-      right: 20px;
-      background: rgba(10, 10, 10, 0.95);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      border-radius: 14px;
-      padding: 20px;
-      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: rgba(8, 8, 8, 0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
       flex-direction: column;
-      gap: 16px;
-      min-width: 180px;
-      z-index: 2000;
+      align-items: center;
+      gap: 0;
+      z-index: 999;
+      display: flex;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                  padding 0.4s ease;
+      padding-top: var(--header-height, 80px);
     }
-  
+
+    .nav-menu li {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+    .nav-menu li:last-child {
+      border-bottom: none;
+    }
+
     .nav-menu a {
-      font-size: 0.85rem;
-      letter-spacing: 1px;
+      display: block;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      padding: 18px 0;
+      width: 100%;
     }
-  
-    /* show menu button */
+
     .menu-toggle {
       display: flex;
     }
-  
-    /* when active */
+
     .nav-menu.open {
-      display: flex;
+      max-height: 400px;
+      padding-bottom: 16px;
     }
   }
   .header-actions {
