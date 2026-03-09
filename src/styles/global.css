@@ -512,6 +512,16 @@ pointer-events: none;
     box-shadow: var(--glow);
     position: relative;
   }
+
+@media (max-width: 768px) {
+  .about-image {
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: calc(-1 * var(--section-padding, 13px));
+    margin-right: calc(-1 * var(--section-padding, 13px));
+    width: calc(100% + 26px);
+  }
+}
   .about-content {
     align-items: start;
   }

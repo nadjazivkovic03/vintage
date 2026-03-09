@@ -350,7 +350,7 @@ export default function App() {
           {/* SKODA SUPERB L&K */}
           <div className="fleet-card price-card">
             <div className="service-front">
-              <img src="/skoda_ai.jpg" alt="Škoda Superb L&K" className="card-image" />
+              <img src="/sk3.JPG" alt="Škoda Superb L&K" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb L&amp;K 2025</h3>
                 <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
@@ -378,7 +378,7 @@ export default function App() {
           {/* SKODA SUPERB 4X4 L&K */}
           <div className="fleet-card price-card">
             <div className="service-front">
-              <img src="/skoda2.jpg" alt="Škoda Superb 4x4 L&K" className="card-image" />
+              <img src="/sk1.JPG" alt="Škoda Superb 4x4 L&K" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb 4x4 L&amp;K 2025</h3>
                 <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
@@ -406,7 +406,7 @@ export default function App() {
           {/* SKODA SUPERB 4X4 SELECTION */}
           <div className="fleet-card price-card">
             <div className="service-front">
-              <img src="/skoda2.jpg" alt="Škoda Superb 4x4 Selection" className="card-image" />
+              <img src="/sk2.JPG" alt="Škoda Superb 4x4 Selection" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb 4x4 Selection 2025</h3>
                 <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
@@ -441,7 +441,7 @@ export default function App() {
 
         <div className="about-content">
           <div className="about-image">
-            <img src="/ll.jpeg" alt="Vintage Car" />
+            <img src="/about.png" alt="Vintage Car" />
           </div>
 
           <div className="about-text">
