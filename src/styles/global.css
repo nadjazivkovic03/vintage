@@ -2852,7 +2852,7 @@ padding-bottom: 5%;
   .header-actions {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 18px;
     padding-right: 14px;
   }
   html, body {
@@ -3399,7 +3399,6 @@ padding-bottom: 5%;
   .lang-switch {
     display: flex;
     gap: 10px;
-    margin-right: 16px;
   }
   
   .lang-switch img {
