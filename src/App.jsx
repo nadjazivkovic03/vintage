@@ -294,7 +294,7 @@ export default function App() {
           {/* MERCEDES V 300 STANDARD */}
           <div className="fleet-card price-card">
             <div className="service-front">
-              <img src="/mece_ai.jpg" alt="Mercedes V 300" className="card-image" />
+              <img src="/slika2.JPG" alt="Mercedes V 300" className="card-image" />
               <div className="card-content">
                 <h3>Mercedes-Benz V 300 2025</h3>
                 <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
@@ -322,7 +322,7 @@ export default function App() {
           {/* MERCEDES V 300 4X4 EXCLUSIVE */}
           <div className="fleet-card price-card">
             <div className="service-front">
-              <img src="/mece.jpg" alt="Mercedes V 300 4x4 Exclusive" className="card-image" />
+              <img src="/v300_ex.jpg" alt="Mercedes V 300 4x4 Exclusive" className="card-image" />
               <div className="card-content">
                 <h3>Mercedes-Benz V 300 4x4 Exclusive 2025</h3>
                 <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
