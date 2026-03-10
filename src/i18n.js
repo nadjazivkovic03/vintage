@@ -66,14 +66,14 @@ export const translations = {
     "Fiksna cena" : "Fixed Price",
     "Bez vozača" : "Without Driver",
     "dana" : "days",
-    "Vintage Car je kompanija posvećena pružanju vrhunskih usluga luksuznog prevoza i iznajmljivanja premium vozila, namenjena klijentima koji očekuju visok standard, pouzdanost i potpunu diskreciju.":
-      "Vintage Car is a company dedicated to delivering premium luxury transportation and high-end vehicle rental services for clients who expect exceptional standards, reliability, and complete discretion.",
+    "Win Car je kompanija posvećena pružanju vrhunskih usluga luksuznog prevoza i iznajmljivanja premium vozila, namenjena klijentima koji očekuju visok standard, pouzdanost i potpunu diskreciju.":
+      "Win Car is a company dedicated to delivering premium luxury transportation and high-end vehicle rental services for clients who expect exceptional standards, reliability, and complete discretion.",
 
     "Posebnu pažnju posvećujemo svakom detalju — od besprekornog stanja vozila, preko tačnosti i sigurnosti, do profesionalnog odnosa prema svakom klijentu.":
       "We pay special attention to every detail — from the immaculate condition of our vehicles to punctuality, safety, and a professional approach to every client.",
 
-    "Bilo da putujete poslovno ili privatno, Vintage Car je vaš pouzdan partner za elegantan i bezbrižan prevoz.":
-      "Whether you are traveling for business or leisure, Vintage Car is your trusted partner for elegant and worry-free transportation.",
+    "Bilo da putujete poslovno ili privatno, Win Car je vaš pouzdan partner za elegantan i bezbrižan prevoz.":
+      "Whether you are traveling for business or leisure, Win Car is your trusted partner for elegant and worry-free transportation.",
       
       "REZERVISITE SVOJU VOZNJU" : "BOOK YOUR RIDE",
       "Izaberite uslugu" : "Service selection",

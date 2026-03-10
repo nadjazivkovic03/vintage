@@ -449,7 +449,7 @@ export default function App() {
           <div className="about-text">
           <p>
   {t(
-    "Vintage Car je kompanija posvećena pružanju vrhunskih usluga luksuznog prevoza i iznajmljivanja premium vozila, namenjena klijentima koji očekuju visok standard, pouzdanost i potpunu diskreciju."
+    "Win Car je kompanija posvećena pružanju vrhunskih usluga luksuznog prevoza i iznajmljivanja premium vozila, namenjena klijentima koji očekuju visok standard, pouzdanost i potpunu diskreciju."
   )}
 </p>
 
@@ -461,7 +461,7 @@ export default function App() {
 
 <p>
   {t(
-    "Bilo da putujete poslovno ili privatno, Vintage Car je vaš pouzdan partner za elegantan i bezbrižan prevoz."
+    "Bilo da putujete poslovno ili privatno, Win Car je vaš pouzdan partner za elegantan i bezbrižan prevoz."
   )}
 </p>
           </div>
@@ -482,7 +482,7 @@ export default function App() {
             >
               <input type="hidden" name="_next" value="https://www.wintagecar.rs/thank-you" />
 
-              <input type="hidden" name="_subject" value="Nova rezervacija - Vintage Car" />
+              <input type="hidden" name="_subject" value="Nova rezervacija - Win Car" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
 
