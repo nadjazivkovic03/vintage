@@ -449,7 +449,7 @@ export default function App() {
           <div className="about-text">
           <p>
   {t(
-    "Win Car je kompanija posvećena pružanju vrhunskih usluga luksuznog prevoza i iznajmljivanja premium vozila, namenjena klijentima koji očekuju visok standard, pouzdanost i potpunu diskreciju."
+    "WinCar je kompanija posvećena pružanju vrhunskih usluga luksuznog prevoza i iznajmljivanja premium vozila, namenjena klijentima koji očekuju visok standard, pouzdanost i potpunu diskreciju."
   )}
 </p>
 
@@ -461,7 +461,7 @@ export default function App() {
 
 <p>
   {t(
-    "Bilo da putujete poslovno ili privatno, Win Car je vaš pouzdan partner za elegantan i bezbrižan prevoz."
+    "Bilo da putujete poslovno ili privatno, WinCar je vaš pouzdan partner za elegantan i bezbrižan prevoz."
   )}
 </p>
           </div>
