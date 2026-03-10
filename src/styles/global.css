@@ -3398,13 +3398,17 @@ padding-bottom: 5%;
   }
     
   .card-content {
-    padding: 20px;
+    padding: 10px 20px 20px;
     display: flex;
     flex-direction: column;
-    gap: 12px;          /* clean spacing */
+    gap: 0;
+  }
+  .card-content h3 {
+    margin: 0;
   }
   .fleet-card .luxury-btn {
-    margin-top: 12px;
+    margin-top: 0 !important;
+    padding: 1.7rem 2rem;
   }
   .fleet-card {
     height: auto;      /* ⬅ allows card to shrink */

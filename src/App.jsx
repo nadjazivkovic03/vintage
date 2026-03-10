@@ -299,7 +299,7 @@ export default function App() {
               <img src="/slika2.JPG" alt="Mercedes V 300" className="card-image" />
               <div className="card-content">
                 <h3>Mercedes-Benz V 300 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
                   {t("Pogledaj cenovnik")}
                 </button>
               </div>
@@ -327,7 +327,7 @@ export default function App() {
               <img src="/v300_ex.jpg" alt="Mercedes V 300 4x4 Exclusive" className="card-image" />
               <div className="card-content">
                 <h3>Mercedes-Benz V 300 4x4 Exclusive 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
                   {t("Pogledaj cenovnik")}
                 </button>
               </div>
@@ -355,7 +355,7 @@ export default function App() {
               <img src="/sk3.JPG" alt="Škoda Superb L&K" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb L&amp;K 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
                   {t("Pogledaj cenovnik")}
                 </button>
               </div>
@@ -383,7 +383,7 @@ export default function App() {
               <img src="/sk1.JPG" alt="Škoda Superb 4x4 L&K" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb 4x4 L&amp;K 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
                   {t("Pogledaj cenovnik")}
                 </button>
               </div>
@@ -411,7 +411,7 @@ export default function App() {
               <img src="/sk2.JPG" alt="Škoda Superb 4x4 Selection" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb 4x4 Selection 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%', marginTop: '20px' }} onClick={toggleServicePrice}>
+                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
                   {t("Pogledaj cenovnik")}
                 </button>
               </div>
