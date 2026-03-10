@@ -49,6 +49,8 @@ export const translations = {
     "Pogledaj cenovnik": "View pricing",
     "Cenovnik": "Pricing",
     "Nazad": "Back",
+      "Hvala Vam!": "Thank You!",
+      "Kontaktiracemo Vas u najkracem mogucem roku.": "We will contact you as soon as possible.",
 
     "Iznajmljivanje luksuznog vozila":
       "Luxury Car Rental",

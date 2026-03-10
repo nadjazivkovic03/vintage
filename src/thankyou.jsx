@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useLang } from "./LanguageContext";
 
 export default function ThankYou() {
+  const { t } = useLang();
+
   return (
     <section
       style={{
@@ -13,7 +16,7 @@ export default function ThankYou() {
       }}
     >
       <div>
-        <h1 className="section-title">Hvala Vam!</h1>
+        <h1 className="section-title">{t("Hvala Vam!")}</h1>
         <p
           style={{
             marginTop: "20px",
@@ -21,15 +24,15 @@ export default function ThankYou() {
             color: "#ccc",
           }}
         >
-          Kontaktiracemo Vas u najkracem mogucem roku.
+          {t("Kontaktiracemo Vas u najkracem mogucem roku.")}
         </p>
 
         <Link
           to="/"
           className="luxury-btn"
-          style={{ marginTop: "40px", display: "inline-block" }}
+          style={{ marginTop: "40px", display: "inline-block", textDecoration: "none" }}
         >
-          Nazad
+          {t("Nazad")}
         </Link>
       </div>
     </section>
