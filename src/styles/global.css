@@ -3666,7 +3666,7 @@ padding-bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
 
-    bottom: -30px;
+    bottom: -60px;
 
     width: calc(100vw - 26px);
     max-width: none;
@@ -3676,7 +3676,7 @@ padding-bottom: 5%;
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 0px;
+    padding: 15px 0px;
 
     background: rgba(0, 0, 0, 0.9);
     border: 1px solid rgba(185,150,74,0.35);
