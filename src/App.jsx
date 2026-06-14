@@ -129,7 +129,7 @@ export default function App() {
       </header>
 
       {/* === HERO SECTION === */}
-      <section className="hero-section" id="home">
+            <section className="hero-section" id="home">
         <div className="hero-slideshow">
           {heroImages.map((img, i) => (
             <div
@@ -154,18 +154,55 @@ export default function App() {
           <p className="hero-tagline">{t("Rent a car & Chauffeur service")}</p>
 
           <div className="hero-buttons">
-            <button
-              className="luxury-btn"
-              onClick={() => scrollToSection('fleet')}
-            >
-              <i className="fas fa-search"></i> {t("PONUDA VOZILA")}
-            </button>
+            <a href="tel:+381606051001" className="hero-btn hero-btn-call">
+              <i className="fas fa-phone-alt"></i> {t("CALL NOW")}
+            </a>
+            <a href="https://wa.me/381606051001" target="_blank" rel="noopener noreferrer" className="hero-btn hero-btn-wa">
+              <i className="fab fa-whatsapp"></i> {t("WHATSAPP")}
+            </a>
           </div>
+
+
         </div>
+
+          <div className="hero-features">
+  <div className="hero-feature">
+    <i className="fas fa-clock"></i>
+    <div>
+      <strong>24/7 SUPPORT</strong>
+      <span>Always Available</span>
+    </div>
+  </div>
+
+  <div className="hero-feature">
+    <i className="fas fa-plane"></i>
+    <div>
+      <strong>AIRPORT</strong>
+      <span>Nikola Tesla</span>
+    </div>
+  </div>
+
+  <div className="hero-feature">
+    <i className="fas fa-shield-alt"></i>
+    <div>
+      <strong>FULL INSURANCE</strong>
+      <span>No Hidden Costs</span>
+    </div>
+  </div>
+
+  <div className="hero-feature">
+    <i className="fas fa-car"></i>
+    <div>
+      <strong>PREMIUM VEHICLES</strong>
+      <span>Maintained Fleet</span>
+    </div>
+  </div>
+</div>
+
       </section>
             {/* === VALUES SECTION === */}
             <section className="values" id="values">
-        <div className="values-list">
+        {/* <div className="values-list">
           <div className="value-item">
             <i className="fas fa-car"></i>
             <h3>{t("Vrhunska Vozila")}</h3>
@@ -189,7 +226,7 @@ export default function App() {
             <h3>{t("Personalizovana Usluga")}</h3>
             <p>{t("Prevoz prilagođen vašim potrebama i navikama")}</p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* === SERVICES SECTION === */}
