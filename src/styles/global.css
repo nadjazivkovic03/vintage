@@ -3668,7 +3668,7 @@ padding-bottom: 5%;
 
     bottom: -30px;
 
-    width: calc(100vw - 36px);
+    width: calc(100vw - 26px);
     max-width: none;
 
     display: flex;
@@ -3676,7 +3676,7 @@ padding-bottom: 5%;
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px 12px;
+    padding: 20px 0px;
 
     background: rgba(0, 0, 0, 0.9);
     border: 1px solid rgba(185,150,74,0.35);
@@ -3709,8 +3709,11 @@ padding-bottom: 5%;
   }
 
   .hero-feature span {
-    display: none;
-  }
+  display: block;
+  font-size: 0.55rem;
+  line-height: 1.1;
+  color: rgba(255,255,255,0.75);
+}
 
   .hero-feature:not(:last-child) {
     border-right: 1px solid rgba(185,150,74,0.25);

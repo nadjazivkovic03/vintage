@@ -170,7 +170,7 @@ export default function App() {
     <i className="fas fa-clock"></i>
     <div>
       <strong>24/7 SUPPORT</strong>
-      <span>Always Available</span>
+      {/* <span>Always Available</span> */}
     </div>
   </div>
 
@@ -194,7 +194,7 @@ export default function App() {
     <i className="fas fa-car"></i>
     <div>
       <strong>PREMIUM VEHICLES</strong>
-      <span>Maintained Fleet</span>
+      {/* <span>Maintained Fleet</span> */}
     </div>
   </div>
 </div>
