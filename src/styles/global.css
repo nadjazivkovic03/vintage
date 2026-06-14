@@ -3625,13 +3625,16 @@ padding-bottom: 5%;
   z-index: 20;
 }
 
+
 .hero-feature {
+  flex: 1;
+
   display: flex;
   align-items: center;
-  gap: 14px;
+  justify-content: center; /* centers entire group */
 
-  flex: 1;
-  color: #e6d6a3;
+  gap: 14px;
+  text-align: left;
 }
 
 .hero-feature i {
@@ -3673,7 +3676,7 @@ padding-bottom: 5%;
     justify-content: space-between;
     align-items: center;
 
-    padding: 12px 8px;
+    padding: 20px 12px;
 
     background: rgba(0, 0, 0, 0.9);
     border: 1px solid rgba(185,150,74,0.35);
