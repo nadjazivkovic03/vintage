@@ -774,9 +774,9 @@ export default function App() {
   <span className="contact-text">{t("Tosin bunar 222, 11070 Beograd")}</span>
 </a>
         <div className="contact-social">
-  <a href="https://wa.me/381606051001" target="_blank" rel="noopener noreferrer" className="social-icon whatsapp">
+  {/* <a href="https://wa.me/381606051001" target="_blank" rel="noopener noreferrer" className="social-icon whatsapp">
     <i className="fab fa-whatsapp"></i>
-  </a>
+  </a> */}
   <a href="https://instagram.com/wincar_belgrade" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
     <i className="fab fa-instagram"></i>
   </a>
@@ -784,7 +784,23 @@ export default function App() {
         </div>
       </section>
 
+    <div className="floating-actions">
+  <a
+    href="tel:+381606051001"
+    className="floating-call"
+  >
+    <i className="fas fa-phone"></i>
+  </a>
 
+  <a
+    href="https://wa.me/381606051001"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="floating-whatsapp"
+  >
+    <i className="fab fa-whatsapp"></i>
+  </a>
+</div>
     </>
      }
      />
