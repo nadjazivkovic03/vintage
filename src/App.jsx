@@ -459,7 +459,7 @@ export default function App() {
           {/* SKODA SUPERB 4X4 L&K */}
           <div className="fleet-card price-card">
             <div className="service-front">
-              <img src="/sk1.JPG" alt="Škoda Superb 4x4 L&K" className="card-image" />
+              <img src="/sk_nova.jpg" alt="Škoda Superb 4x4 L&K" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb 4x4 L&amp;K 2025</h3>
                 <div className="fleet-card-footer">
