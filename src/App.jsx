@@ -377,7 +377,7 @@ export default function App() {
           {/* MERCEDES V 300 4X4 EXCLUSIVE */}
           <div className="fleet-card price-card">
             <div className="service-front">
-              <img src="/v300_ex.jpg" alt="Mercedes V 300 4x4 Exclusive" className="card-image" />
+              <img src="/ex_nova.jpg" alt="Mercedes V 300 4x4 Exclusive" className="card-image" />
               <div className="card-content">
                 <h3>Mercedes-Benz V 300 4x4 Exclusive 2025</h3>
                 <div className="fleet-card-footer">

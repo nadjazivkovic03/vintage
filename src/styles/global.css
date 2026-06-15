@@ -3854,7 +3854,7 @@ padding-bottom: 2rem;
 }
 .contact-section{
   padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 /* .floating-whatsapp {
   position: fixed;
@@ -3894,12 +3894,11 @@ padding-bottom: 2rem;
   padding-bottom: 0;
 }
 
-@media (max-width: 768px) {
 
   .floating-actions {
     position: fixed;
     right: 20px;
-    bottom: 3rem;
+    bottom: 1rem;
 
     display: flex;
     gap: 12px;
@@ -3943,7 +3942,11 @@ padding-bottom: 2rem;
   .floating-whatsapp i {
     font-size: 1.8rem;
   }
+
+  .fleet-card .luxury-btn {
+  border-radius: 8px;
 }
+
     
     
   
