@@ -94,7 +94,19 @@ export const translations = {
         "Cena u zavisnosti od broja lokacija" : "Price depending on the number of locations",
         "po dogovoru" : "negotiable",
         "Sa vozačem (8 sati) - domet 250km" : "With Driver (8 hours) - range 250km",
-
+        "POZOVI ODMAH": "CALL NOW",
+        "24/7 PODRSKA": "24/7 SUPPORT",
+        "AERODROM": "AIRPORT",
+        "FULL KASKO": "FULL INSURANCE",
+        "Bez skrivenih troškova": "No Hidden Costs",
+        "PREMIUM VOZILA": "PREMIUM VEHICLES",
+        "Od": "From",
+        "dan": "day",
+        "Datum": "Date",
+        "Vozilo": "Vehicle",
+        "Od datuma": "From date",
+        "Do datuma": "To date",
+        "Whatsapp broj": "Whatsapp number",
     }
   };
   

@@ -20,6 +20,8 @@ const heroImages = [
 export default function App() {
   const { t, changeLanguage, lang } = useLang();
 
+  const [selectedService, setSelectedService] = useState("");
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -155,7 +157,7 @@ export default function App() {
 
           <div className="hero-buttons">
             <a href="tel:+381606051001" className="hero-btn hero-btn-call">
-              <i className="fas fa-phone-alt"></i> {t("CALL NOW")}
+              <i className="fas fa-phone-alt"></i> {t("POZOVI ODMAH")}
             </a>
             <a href="https://wa.me/381606051001" target="_blank" rel="noopener noreferrer" className="hero-btn hero-btn-wa">
               <i className="fab fa-whatsapp"></i> {t("WHATSAPP")}
@@ -169,7 +171,7 @@ export default function App() {
   <div className="hero-feature">
     <i className="fas fa-clock"></i>
     <div>
-      <strong>24/7 SUPPORT</strong>
+      <strong>{t("24/7 PODRSKA")}</strong>
       {/* <span>Always Available</span> */}
     </div>
   </div>
@@ -177,7 +179,7 @@ export default function App() {
   <div className="hero-feature">
     <i className="fas fa-plane"></i>
     <div>
-      <strong>AIRPORT</strong>
+      <strong>{t("AERODROM")}</strong>
       <span>Nikola Tesla</span>
     </div>
   </div>
@@ -185,15 +187,15 @@ export default function App() {
   <div className="hero-feature">
     <i className="fas fa-shield-alt"></i>
     <div>
-      <strong>FULL INSURANCE</strong>
-      <span>No Hidden Costs</span>
+      <strong>{t("FULL KASKO")}</strong>
+      <span>{t("Bez skrivenih troškova")}</span>
     </div>
   </div>
 
   <div className="hero-feature">
     <i className="fas fa-car"></i>
     <div>
-      <strong>PREMIUM VEHICLES</strong>
+      <strong>{t("PREMIUM VOZILA")}</strong>
       {/* <span>Maintained Fleet</span> */}
     </div>
   </div>
@@ -233,9 +235,9 @@ export default function App() {
 <section className="services-section" id="services">
   <div className="section-header">
     <h2 className="section-title">{t("NASE USLUGE")}</h2>
-    <p style={{ color: "#ccc", maxWidth: "600px", margin: "0 auto" }}>
+    {/* <p style={{ color: "#ccc", maxWidth: "600px", margin: "0 auto" }}>
       {t("Obezbedjujemo Vam luksuzan prevoz za svaku priliku")}
-    </p>
+    </p> */}
   </div>
 
   <div className="services-container">
@@ -250,13 +252,13 @@ export default function App() {
         {t("Lagodan prevoz do i od Aerodroma")}
       </p>
 
-      <ul className="service-features">
+      {/* <ul className="service-features">
         <li><i className="fas fa-check"></i> {t("Pracenje leta")}</li>
         <li><i className="fas fa-check"></i> {t("Docekujemo Vas na aerodromu ili na vasoj adresi")}</li>
         <li><i className="fas fa-check"></i> {t("Preuzimamo prtljag")}</li>
         <li><i className="fas fa-check"></i> {t("Prevozimo Vas na destinaciju u luksuznom vozilu")}</li>
         <li><i className="fas fa-check"></i> {t("Cena u zavisnosti od broja lokacija")}</li>
-      </ul>
+      </ul> */}
 
       <div className="service-cta">
         {/* <span className="service-price"></span> */}
@@ -281,12 +283,12 @@ export default function App() {
         {t("Vaš privatni vozač na raspolaganju")}
       </p>
 
-      <ul className="service-features">
+      {/* <ul className="service-features">
         <li><i className="fas fa-check"></i> {t("Domet 250km")}</li>
         <li><i className="fas fa-check"></i> {t("Profesionalni vozač")}</li>
         <li><i className="fas fa-check"></i> {t("Odabir datuma")}</li>
         <li><i className="fas fa-check"></i> {t("Izbor vozila")}</li>
-      </ul>
+      </ul> */}
 
       <div className="service-cta">
         <button className="service-btn" onClick={() => scrollToSection("booking")}>
@@ -307,11 +309,11 @@ export default function App() {
         {t("Iznajmite luksuzno vozilo za sopstvenu vožnju.")}
       </p>
 
-      <ul className="service-features">
+      {/* <ul className="service-features">
         <li><i className="fas fa-check"></i> {t("Potpuno osiguranje")}</li>
         <li><i className="fas fa-check"></i> {t("Premium vozila")}</li>
         <li><i className="fas fa-check"></i> {t("24/7 podrška")}</li>
-      </ul>
+      </ul> */}
 
       <div className="service-cta">
         <button className="service-btn" onClick={() => scrollToSection("booking")}>
@@ -336,9 +338,23 @@ export default function App() {
               <img src="/slika2.JPG" alt="Mercedes V 300" className="card-image" />
               <div className="card-content">
                 <h3>Mercedes-Benz V 300 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
-                  {t("Pogledaj cenovnik")}
+
+                <div className="fleet-card-footer">
+                <div className="fleet-starting-price">
+                  <span>{t("Od")}</span> €85<span>/{t("dan")}</span>
+                </div>
+
+                <button
+                  className="luxury-btn"
+                  onClick={() =>
+                    document.getElementById("booking")?.scrollIntoView({
+                      behavior: "smooth"
+                    })
+                  }
+                >
+                  {t("REZERVISI")}
                 </button>
+              </div>
               </div>
             </div>
             <div className="service-back">
@@ -364,9 +380,22 @@ export default function App() {
               <img src="/v300_ex.jpg" alt="Mercedes V 300 4x4 Exclusive" className="card-image" />
               <div className="card-content">
                 <h3>Mercedes-Benz V 300 4x4 Exclusive 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
-                  {t("Pogledaj cenovnik")}
+                <div className="fleet-card-footer">
+                <div className="fleet-starting-price">
+                  <span>{t("Od")}</span> €115<span>/{t("dan")}</span>
+                </div>
+
+                <button
+                  className="luxury-btn"
+                  onClick={() =>
+                    document.getElementById("booking")?.scrollIntoView({
+                      behavior: "smooth"
+                    })
+                  }
+                >
+                  {t("REZERVISI")}
                 </button>
+              </div>
               </div>
             </div>
             <div className="service-back">
@@ -392,9 +421,22 @@ export default function App() {
               <img src="/sk3.JPG" alt="Škoda Superb L&K" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb L&amp;K 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
-                  {t("Pogledaj cenovnik")}
+                <div className="fleet-card-footer">
+                <div className="fleet-starting-price">
+                  <span>{t("Od")}</span> €55<span>/{t("dan")}</span>
+                </div>
+
+                <button
+                  className="luxury-btn"
+                  onClick={() =>
+                    document.getElementById("booking")?.scrollIntoView({
+                      behavior: "smooth"
+                    })
+                  }
+                >
+                  {t("REZERVISI")}
                 </button>
+              </div>
               </div>
             </div>
             <div className="service-back">
@@ -420,9 +462,22 @@ export default function App() {
               <img src="/sk1.JPG" alt="Škoda Superb 4x4 L&K" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb 4x4 L&amp;K 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
-                  {t("Pogledaj cenovnik")}
+                <div className="fleet-card-footer">
+                <div className="fleet-starting-price">
+                  <span>{t("Od")}</span> €70<span>/{t("dan")}</span>
+                </div>
+
+                <button
+                  className="luxury-btn"
+                  onClick={() =>
+                    document.getElementById("booking")?.scrollIntoView({
+                      behavior: "smooth"
+                    })
+                  }
+                >
+                  {t("REZERVISI")}
                 </button>
+              </div>
               </div>
             </div>
             <div className="service-back">
@@ -448,9 +503,22 @@ export default function App() {
               <img src="/sk2.JPG" alt="Škoda Superb 4x4 Selection" className="card-image" />
               <div className="card-content">
                 <h3>Škoda Superb 4x4 Selection 2025</h3>
-                <button className="luxury-btn" style={{ width: '100%' }} onClick={toggleServicePrice}>
-                  {t("Pogledaj cenovnik")}
+                <div className="fleet-card-footer">
+                <div className="fleet-starting-price">
+                  <span>{t("Od")}</span> €55<span>/{t("dan")}</span>
+                </div>
+
+                <button
+                  className="luxury-btn"
+                  onClick={() =>
+                    document.getElementById("booking")?.scrollIntoView({
+                      behavior: "smooth"
+                    })
+                  }
+                >
+                  {t("REZERVISI")}
                 </button>
+              </div>
               </div>
             </div>
             <div className="service-back">
@@ -472,7 +540,184 @@ export default function App() {
 
         </div>
       </section>
-            {/* === ABOUT SECTION === */}
+          
+
+      {/* === BOOKING SECTION === */}
+      <section className="booking-section" id="booking">
+        <div className="section-header">
+          <h2 className="section-title">{t("REZERVISITE SVOJU VOZNJU")}</h2>
+        </div>
+
+        <div className="booking-container">
+          <div className="booking-form">
+<form
+  action="https://formsubmit.co/info@wintagecar.rs"
+  method="POST"
+>
+  <input
+    type="hidden"
+    name="_next"
+    value="https://www.wintagecar.rs/thank-you"
+  />
+
+  <input
+    type="hidden"
+    name="_subject"
+    value="Nova rezervacija - Win Car"
+  />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_captcha" value="false" />
+
+  <div className="form-group">
+    <label>{t("Izaberite uslugu")} *</label>
+
+    <select
+      name="Service"
+      required
+      className="service-select"
+      value={selectedService}
+      onChange={(e) => setSelectedService(e.target.value)}
+    >
+      <option value="">...</option>
+
+      <option value="airport">
+        {t("Aerodrom Transfer")}
+      </option>
+
+      <option value="chauffeur">
+        {t("Vozilo sa vozačem")}
+      </option>
+
+      <option value="rental">
+        {t("Iznajmljivanje luksuznog vozila")}
+      </option>
+
+      <option value="special">
+        {t("Poseban zahtev")}
+      </option>
+    </select>
+  </div>
+
+  {(selectedService === "airport" ||
+    selectedService === "chauffeur") && (
+    <>
+      <div className="form-group">
+        <label>{t("Datum")} *</label>
+        <input type="date" name="Date" required />
+      </div>
+
+      <div className="form-group">
+        <label>{t("Vozilo")} *</label>
+
+        <select
+          name="Vehicle"
+          required
+          className="vehicle-select"
+        >
+          <option value="">...</option>
+          <option>Mercedes-Benz V 300 2025</option>
+          <option>Mercedes-Benz V 300 4x4 Exclusive 2025</option>
+          <option>Škoda Superb L&amp;K 2025</option>
+          <option>Škoda Superb 4x4 L&amp;K 2025</option>
+          <option>Škoda Superb 4x4 Selection 2025</option>
+        </select>
+      </div>
+    </>
+  )}
+
+  {selectedService === "rental" && (
+    <>
+      <div className="form-row">
+        <div className="form-group">
+          <label>{t("Od datuma")} *</label>
+          <input
+            type="date"
+            name="From Date"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>{t("Do datuma")} *</label>
+          <input
+            type="date"
+            name="To Date"
+            required
+          />
+        </div>
+      </div>
+
+      <div className="form-group">
+        <label>{t("Vozilo")} *</label>
+
+        <select
+          name="Vehicle"
+          required
+          className="vehicle-select"
+        >
+          <option value="">...</option>
+          <option>Mercedes-Benz V 300 2025</option>
+          <option>Mercedes-Benz V 300 4x4 Exclusive 2025</option>
+          <option>Škoda Superb L&amp;K 2025</option>
+          <option>Škoda Superb 4x4 L&amp;K 2025</option>
+          <option>Škoda Superb 4x4 Selection 2025</option>
+        </select>
+      </div>
+    </>
+  )}
+
+  <div className="form-row">
+    <div className="form-group">
+      <label>{t("Ime")} *</label>
+      <input
+        type="text"
+        name="First Name"
+        required
+      />
+    </div>
+
+    <div className="form-group">
+      <label>{t("Prezime")} *</label>
+      <input
+        type="text"
+        name="Last Name"
+        required
+      />
+    </div>
+  </div>
+
+  <div className="form-row">
+    <div className="form-group">
+      <label>{t("Whatsapp broj")} *</label>
+      <input
+        type="tel"
+        name="Phone"
+        required
+      />
+    </div>
+  </div>
+
+  <div className="form-group">
+    <label>{t("Poruka")}</label>
+    <textarea
+      name="Message"
+      rows="4"
+    ></textarea>
+  </div>
+
+  <button
+    type="submit"
+    className="submit-btn"
+  >
+    {t("POSALJI ZAHTEV")}
+  </button>
+</form>
+
+          </div>
+        </div>
+      </section>
+
+      {/* === ABOUT SECTION === */}
             <section className="about-section" id="about">
         <div className="section-header">
           <h2 className="section-title">{t("O NAMA")}</h2>
@@ -501,70 +746,6 @@ export default function App() {
     "Bilo da putujete poslovno ili privatno, WinCar je vaš pouzdan partner za elegantan i bezbrižan prevoz."
   )}
 </p>
-          </div>
-        </div>
-      </section>
-
-      {/* === BOOKING SECTION === */}
-      <section className="booking-section" id="booking">
-        <div className="section-header">
-          <h2 className="section-title">{t("REZERVISITE SVOJU VOZNJU")}</h2>
-        </div>
-
-        <div className="booking-container">
-          <div className="booking-form">
-            <form
-              action="https://formsubmit.co/info@wintagecar.rs"
-              method="POST"
-            >
-              <input type="hidden" name="_next" value="https://www.wintagecar.rs/thank-you" />
-
-              <input type="hidden" name="_subject" value="Nova rezervacija - Win Car" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-
-              <div className="form-group">
-                <label>{t("Izaberite uslugu")} *</label>
-                <select name="Service" required className="service-select">
-                  <option value="">...</option>
-                  <option>{t("Aerodrom Transfer")}</option>
-                  <option>{t("Vozilo sa vozačem")}</option>
-                  <option>{t("Iznajmljivanje luksuznog vozila")}</option>
-                  <option>{t("Poseban zahtev")}</option>
-                </select>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label>{t("Ime")} *</label>
-                  <input type="text" name="First Name" required />
-                </div>
-                <div className="form-group">
-                  <label>{t("Prezime")} *</label>
-                  <input type="text" name="Last Name" required />
-                </div>
-              </div>
-
-              <div className="form-row">
-                <div className="form-group">
-                  <label>Email *</label>
-                  <input type="email" name="Email" required />
-                </div>
-                <div className="form-group">
-                  <label>{t("Telefon")} *</label>
-                  <input type="tel" name="Phone" required />
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label>{t("Poruka")}</label>
-                <textarea name="Message" rows="4"></textarea>
-              </div>
-
-              <button type="submit" className="submit-btn">
-                {t("POSALJI ZAHTEV")}
-              </button>
-            </form>
           </div>
         </div>
       </section>
