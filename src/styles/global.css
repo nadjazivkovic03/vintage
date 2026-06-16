@@ -4153,10 +4153,21 @@ padding-bottom: 2rem;
     margin-bottom: 2rem;
   }
   .reservation-modal {
-  transform: scale(0.9);
+  transform: scale(0.85);
   transform-origin: center center;
 }
-  
+  .reservation-car {
+    gap: 1.5rem;
+  }
+
+  .reservation-car-info {
+    margin-top: 0;
+  }
+
+  .reservation-car-info h3 {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
 }
 
     
