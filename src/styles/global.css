@@ -4147,9 +4147,10 @@ padding-bottom: 2rem;
     height: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-height: 700px) {
   .reservation-modal {
-    transform: scale(0.8);
+    transform: scaleY(0.8);
+    transform-origin: center;
   }
 }
     
