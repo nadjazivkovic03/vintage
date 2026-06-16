@@ -21,7 +21,7 @@ export default function ReservationModal({
           ×
         </button>
 
-        <h2>{t("REZERVACIJA VOZILA")}</h2>
+        <h2>{t("REZERVACIJA kite")}</h2>
 
         <div className="reservation-car">
 
