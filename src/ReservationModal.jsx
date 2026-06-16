@@ -49,15 +49,32 @@ export default function ReservationModal({
         </div>
 
         <form
-          action="https://formsubmit.co/info@wintagecar.rs"
-          method="POST"
-        >
+            action="https://formsubmit.co/info@wintagecar.rs"
+            method="POST"
+            >
+            <input
+                type="hidden"
+                name="_next"
+                value="https://www.wintagecar.rs/thank-you"
+            />
 
-          <input
-            type="hidden"
-            name="Vehicle"
-            value={car.name}
-          />
+            <input
+                type="hidden"
+                name="_subject"
+                value="Nova rezervacija vozila"
+            />
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="false"
+            />
+
+            <input
+                type="hidden"
+                name="Vehicle"
+                value={car.name}
+            />
 
           <input
             type="text"
