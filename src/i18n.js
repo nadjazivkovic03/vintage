@@ -107,6 +107,14 @@ export const translations = {
         "Od datuma": "From date",
         "Do datuma": "To date",
         "Whatsapp broj": "Whatsapp number",
+        "REZERVACIJA VOZILA": "RESERVATION",
+        "Ime i prezime": "First and Last Name",
+        "Telefon / WhatsApp": "Phone / WhatsApp",
+        "Datum preuzimanja": "Pick-up Date",
+        "Datum vraćanja": "Return Date",
+        "POŠALJI UPIT": "SEND REQUEST",
+        "Automatik": "Automatic",
+        "sedišta": "seats"
     }
   };
   

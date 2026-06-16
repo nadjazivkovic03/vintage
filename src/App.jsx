@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import ThankYou from "./thankyou";
 import { useLang } from "./LanguageContext";
+import ReservationModal from "./ReservationModal";
 
 
 import './styles/global.css';
@@ -24,6 +25,14 @@ export default function App() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const [reservationOpen, setReservationOpen] = useState(false);
+  const [selectedCar, setSelectedCar] = useState(null);
+
+  const openReservation = (car) => {
+  setSelectedCar(car);
+  setReservationOpen(true);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -347,8 +356,11 @@ export default function App() {
                 <button
                   className="luxury-btn"
                   onClick={() =>
-                    document.getElementById("booking")?.scrollIntoView({
-                      behavior: "smooth"
+                    openReservation({
+                      name: "Mercedes-Benz V 300 2025",
+                      image: "slika2.JPG",
+                      price: 85,
+                      seats: 8
                     })
                   }
                 >
@@ -388,8 +400,11 @@ export default function App() {
                 <button
                   className="luxury-btn"
                   onClick={() =>
-                    document.getElementById("booking")?.scrollIntoView({
-                      behavior: "smooth"
+                    openReservation({
+                      name: "Mercedes-Benz V 300 4x4 Exclusive 2025",
+                      image: "ex_nova.jpg",
+                      price: 115,
+                      seats: 7
                     })
                   }
                 >
@@ -429,8 +444,11 @@ export default function App() {
                 <button
                   className="luxury-btn"
                   onClick={() =>
-                    document.getElementById("booking")?.scrollIntoView({
-                      behavior: "smooth"
+                    openReservation({
+                      name: "Škoda Superb L&K 2025",
+                      image: "sk3.JPG",
+                      price: 55,
+                      seats: 5
                     })
                   }
                 >
@@ -470,8 +488,11 @@ export default function App() {
                 <button
                   className="luxury-btn"
                   onClick={() =>
-                    document.getElementById("booking")?.scrollIntoView({
-                      behavior: "smooth"
+                    openReservation({
+                      name: "Škoda Superb 4x4 L&K 2025",
+                      image: "sk_nova.jpg",
+                      price: 70,
+                      seats: 5
                     })
                   }
                 >
@@ -511,8 +532,11 @@ export default function App() {
                 <button
                   className="luxury-btn"
                   onClick={() =>
-                    document.getElementById("booking")?.scrollIntoView({
-                      behavior: "smooth"
+                    openReservation({
+                      name: "Škoda Superb 4x4 Selection 2025",
+                      image: "sk2.JPG",
+                      price: 55,
+                      seats: 5
                     })
                   }
                 >
@@ -801,6 +825,11 @@ export default function App() {
     <i className="fab fa-whatsapp"></i>
   </a>
 </div>
+      <ReservationModal
+        car={selectedCar}
+        isOpen={reservationOpen}
+        onClose={() => setReservationOpen(false)}
+      />
     </>
      }
      />
