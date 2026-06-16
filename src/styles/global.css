@@ -3961,8 +3961,6 @@ padding-bottom: 2rem;
 
 .reservation-modal {
   width: 90%;
-  max-width: 1050px;
-  min-height: auto;
 
   background:
     linear-gradient(
@@ -4153,7 +4151,7 @@ padding-bottom: 2rem;
     margin-bottom: 1.5rem;
   }
   .reservation-modal {
-  transform: scale(0.85);
+  transform: scale(0.8);
   transform-origin: center center;
 }
   .reservation-car {
@@ -4185,6 +4183,12 @@ padding-bottom: 2rem;
   inset: 0;
   overflow: hidden;
   touch-action: none;
+}
+@media (max-width: 768px) {
+  .reservation-modal {
+    transform: scaleX(0.85) scaleY(0.8);
+    transform-origin: center center;
+  }
 }
 
     
