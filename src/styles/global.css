@@ -4146,12 +4146,18 @@ padding-bottom: 2rem;
     max-width: 99%;
     height: auto;
   }
-}
-@media (max-height: 700px) {
-  .reservation-modal {
-    transform: scaleY(0.8);
-    transform-origin: center;
+  .date-group {
+    margin-bottom: 0;
   }
+  .reservation-car{
+    margin-bottom: 2rem;
+  }
+  .reservation-modal {
+  transform: scale(0.9);
+  transform-origin: center center;
 }
+  
+}
+
     
   
