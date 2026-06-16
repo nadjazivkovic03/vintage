@@ -4146,6 +4146,10 @@ padding-bottom: 2rem;
     max-width: 99%;
     height: auto;
   }
+  .reservation-modal {
+  transform: scale(0.9);
+  transform-origin: center center;
+  }
 }
     
     
