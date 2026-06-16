@@ -1,11 +1,29 @@
 // ReservationModal.jsx
 import { useLang } from "./LanguageContext";
+import { useEffect } from "react";
 
 export default function ReservationModal({
   car,
   isOpen,
   onClose,
 }) {
+    useEffect(() => {
+  console.log("ReservationModal effect", isOpen);
+
+  if (!isOpen) return;
+
+  document.body.style.position = "fixed";
+  document.body.style.overflow = "hidden";
+
+  console.log("Scroll locked");
+
+  return () => {
+    console.log("Scroll unlocked");
+
+    document.body.style.position = "";
+    document.body.style.overflow = "";
+  };
+}, [isOpen]);
     const { t } = useLang();
   if (!isOpen || !car) return null;
 

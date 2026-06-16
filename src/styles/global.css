@@ -3962,7 +3962,7 @@ padding-bottom: 2rem;
 .reservation-modal {
   width: 90%;
   max-width: 1050px;
-  min-height: 720px;
+  min-height: auto;
 
   background:
     linear-gradient(
@@ -4172,6 +4172,19 @@ padding-bottom: 2rem;
   height: 70px;
   margin-top: 10px;
 }
+}
+.reservation-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+.reservation-overlay {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  touch-action: none;
 }
 
     
