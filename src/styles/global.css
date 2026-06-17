@@ -4192,10 +4192,8 @@ padding-bottom: 2rem;
 }
 @media (max-width: 768px) {
   .reservation-modal {
-    max-height: 90vh;
+    max-height: 95vh;
     overflow-y: auto;
-
-    /* Optional: nicer scrolling on iPhone */
     -webkit-overflow-scrolling: touch;
   }
 }
