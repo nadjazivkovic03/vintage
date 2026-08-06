@@ -114,7 +114,82 @@ export const translations = {
         "Datum vraćanja": "Return Date",
         "POŠALJI UPIT": "SEND REQUEST",
         "Automatik": "Automatic",
-        "sedišta": "seats"
+        "sedišta": "seats",
+
+        /* === AIRPORT TRANSFER LANDING PAGE === */
+        "KAKO FUNKCIONISE": "HOW IT WORKS",
+        "CENE": "PRICES",
+        "PITANJA": "FAQ",
+        "Transfer do i od Aerodroma Nikola Tesla":
+          "Transfers to and from Nikola Tesla Airport",
+        "FIKSNA CENA": "FIXED PRICE",
+        "PRACENJE LETA": "FLIGHT TRACKING",
+        "DOCEK SA TABLOM": "MEET & GREET",
+        "Sa vašim imenom": "With your name",
+
+        "Pošaljite zahtev": "Send a request",
+        "Popunite formu ili nas kontaktirajte na WhatsApp — odgovaramo u najkraćem roku.":
+          "Fill in the form or message us on WhatsApp — we reply as soon as possible.",
+        "Pratimo vaš let": "We track your flight",
+        "Ako let kasni, vozač prilagođava vreme dolaska — bez dodatnih troškova.":
+          "If your flight is delayed, your driver adjusts the pick-up time — at no extra cost.",
+        "Doček na aerodromu": "Meet & greet at the airport",
+        "Vozač vas čeka u dolasku sa tablom sa vašim imenom i preuzima prtljag.":
+          "Your driver waits in the arrivals hall with a name sign and handles your luggage.",
+        "Udoban prevoz": "Comfortable ride",
+        "Vozimo vas direktno na vašu adresu u luksuznom vozilu sa full kasko osiguranjem.":
+          "We drive you straight to your address in a luxury, fully insured vehicle.",
+
+        "CENE TRANSFERA": "TRANSFER PRICES",
+        "Cene se odnose na sva vozila": "Prices apply to all vehicles",
+        "Usluga": "Service",
+        "Cena": "Price",
+        "Aerodrom – Grad": "Airport – City",
+        "Grad – Aerodrom": "City – Airport",
+        "Dodatna lokacija": "Additional location",
+        "Cena je po vozilu, a ne po putniku.":
+          "The price is per vehicle, not per passenger.",
+        "Za destinacije van Beograda cena je po dogovoru.":
+          "For destinations outside Belgrade the price is agreed individually.",
+
+        "VOZILA ZA TRANSFER": "TRANSFER VEHICLES",
+        "Izaberi vozilo": "Select vehicle",
+
+        "REZERVISITE TRANSFER": "BOOK YOUR TRANSFER",
+        "Smer": "Direction",
+        "Povratni transfer": "Round trip",
+        "Vreme": "Time",
+        "Datum povratka": "Return date",
+        "Vreme povratka": "Return time",
+        "Broj leta": "Flight number",
+        "Broj putnika": "Number of passengers",
+        "Adresa preuzimanja": "Pick-up address",
+        "Adresa destinacije": "Drop-off address",
+        "Opciono": "Optional",
+
+        "CESTA PITANJA": "FREQUENTLY ASKED QUESTIONS",
+        "Šta ako moj let kasni?": "What if my flight is delayed?",
+        "Pratimo status vašeg leta i vozač prilagođava vreme dolaska. Nema dodatne naplate za kašnjenje leta.":
+          "We monitor your flight status and the driver adjusts the pick-up time. There is no extra charge for a delayed flight.",
+        "Gde me vozač čeka?": "Where does the driver wait for me?",
+        "U dolaznom terminalu Aerodroma Nikola Tesla, sa tablom na kojoj je vaše ime.":
+          "In the arrivals terminal of Nikola Tesla Airport, holding a sign with your name.",
+        "Da li je cena po putniku ili po vozilu?":
+          "Is the price per passenger or per vehicle?",
+        "Cena je po vozilu. Vozilo birate prema broju putnika i prtljaga.":
+          "The price is per vehicle. You choose the vehicle based on the number of passengers and luggage.",
+        "Koliko putnika može da primi vozilo?":
+          "How many passengers fit in a vehicle?",
+        "Mercedes-Benz V 300 ima do 8 sedišta, a Škoda Superb 5 sedišta.":
+          "The Mercedes-Benz V 300 has up to 8 seats, and the Škoda Superb 5 seats.",
+        "Da li mogu da dodam još jednu adresu?": "Can I add another address?",
+        "Da. Svaka dodatna lokacija se naplaćuje +10€.":
+          "Yes. Each additional location is charged +€10.",
+        "Koliko unapred treba rezervisati?":
+          "How far in advance should I book?",
+        "Preporučujemo najmanje 24 sata unapred, ali primamo i zahteve u kraćem roku — pozovite nas ili pišite na WhatsApp.":
+          "We recommend at least 24 hours in advance, but we also accept short-notice requests — call us or message us on WhatsApp.",
+        "Detaljnije": "Learn more"
     }
   };
   

@@ -1,5 +1,6 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import ThankYou from "./thankyou";
+import AirportTransfer from "./AirportTransfer";
 import { useLang } from "./LanguageContext";
 import ReservationModal from "./ReservationModal";
 
@@ -270,7 +271,9 @@ export default function App() {
       </ul> */}
 
       <div className="service-cta">
-        {/* <span className="service-price"></span> */}
+        <Link to="/airport-transfer" className="service-link">
+          {t("Detaljnije")} <i className="fas fa-arrow-right"></i>
+        </Link>
         <button
           className="service-btn"
           onClick={() => scrollToSection("booking")}
@@ -834,6 +837,10 @@ export default function App() {
      }
      />
  
+     {/* AIRPORT TRANSFER LANDING PAGE */}
+     <Route path="/airport-transfer" element={<AirportTransfer />} />
+     <Route path="/aerodrom-transfer" element={<AirportTransfer />} />
+
      {/* THANK YOU PAGE */}
      <Route path="/thank-you" element={<ThankYou />} />
  
