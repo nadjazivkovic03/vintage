@@ -189,7 +189,62 @@ export const translations = {
           "How far in advance should I book?",
         "Preporučujemo najmanje 24 sata unapred, ali primamo i zahteve u kraćem roku — pozovite nas ili pišite na WhatsApp.":
           "We recommend at least 24 hours in advance, but we also accept short-notice requests — call us or message us on WhatsApp.",
-        "Detaljnije": "Learn more"
+        "Detaljnije": "Learn more",
+
+        /* === CHAUFFEUR SERVICE LANDING PAGE === */
+        "8 SATI": "8 HOURS",
+        "DOMET 250KM": "250 KM RANGE",
+        "Uključeno u cenu": "Included in the price",
+        "PROFESIONALNI VOZAC": "PROFESSIONAL DRIVER",
+        "Diskrecija": "Discretion",
+
+        "CENE SA VOZACEM": "CHAUFFEUR PRICES",
+        "Fiksna cena za 8 sati vožnje i domet do 250 km":
+          "Fixed price for 8 hours of driving and a range of up to 250 km",
+        "U cenu je uključena unapred definisana dnevna kilometraža.":
+          "A predefined daily mileage is included in the price.",
+        "Dodatni sati i prekoračenje kilometraže naplaćuju se po dogovoru.":
+          "Additional hours and exceeding the mileage are charged by agreement.",
+        "Za duže relacije i posebne zahteve cena se dogovara individualno.":
+          "For longer routes and special requests the price is agreed individually.",
+
+        "Dogovaramo detalje": "We agree on the details",
+        "Potvrđujemo vozilo, vreme početka i plan vožnje prema vašim potrebama.":
+          "We confirm the vehicle, the start time and the itinerary to suit your needs.",
+        "Vozač dolazi na adresu": "Your driver comes to you",
+        "Profesionalni vozač vas preuzima na dogovorenoj adresi, tačno na vreme.":
+          "A professional driver picks you up at the agreed address, right on time.",
+        "Vozilo vam je na raspolaganju": "The car is at your disposal",
+        "Tokom 8 sati vozač je uz vas — bez brige o parkingu, ruti i vožnji.":
+          "For 8 hours your driver stays with you — no worries about parking, routes or driving.",
+
+        "VOZILA SA VOZACEM": "CHAUFFEUR VEHICLES",
+        "h": "h",
+
+        "REZERVISITE VOZACA": "BOOK A CHAUFFEUR",
+        "Vreme početka": "Start time",
+        "Trajanje": "Duration",
+        "8 sati (standardni paket)": "8 hours (standard package)",
+        "Više od 8 sati (po dogovoru)": "More than 8 hours (by agreement)",
+        "Plan vožnje / destinacije": "Itinerary / destinations",
+
+        "Šta je uključeno u cenu?": "What is included in the price?",
+        "Vozilo sa profesionalnim vozačem na 8 sati i unapred definisana kilometraža do 250 km.":
+          "A vehicle with a professional driver for 8 hours and a predefined mileage of up to 250 km.",
+        "Šta ako mi treba više od 8 sati?": "What if I need more than 8 hours?",
+        "Dodatni sati se naplaćuju po dogovoru — navedite željeno trajanje u zahtevu i poslaćemo vam ponudu.":
+          "Additional hours are charged by agreement — state the duration you need in your request and we will send you a quote.",
+        "Šta ako prekoračim 250 km?": "What if I exceed 250 km?",
+        "Prekoračenje dogovorene kilometraže naplaćuje se dodatno, po dogovoru.":
+          "Exceeding the agreed mileage is charged additionally, by agreement.",
+        "Da li mogu da menjam rutu tokom dana?":
+          "Can I change the route during the day?",
+        "Da, u okviru dogovorenih 8 sati i predviđene kilometraže vozilo i vozač su na vašem raspolaganju.":
+          "Yes — within the agreed 8 hours and mileage the car and driver are entirely at your disposal.",
+        "Da li je moguća vožnja van Beograda?":
+          "Is driving outside Belgrade possible?",
+        "Da. Za duže relacije i vanredne termine cena se dogovara individualno.":
+          "Yes. For longer routes and out-of-hours bookings the price is agreed individually."
     }
   };
   

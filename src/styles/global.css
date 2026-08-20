@@ -4206,31 +4206,45 @@ padding-bottom: 2rem;
 #transfer-prices,
 #transfer-fleet,
 #transfer-booking,
-#transfer-faq {
+#transfer-faq,
+#chauffeur-prices,
+#chauffeur-how,
+#chauffeur-fleet,
+#chauffeur-booking,
+#chauffeur-faq {
   scroll-margin-top: calc(var(--header-height, 140px) + 8px);
 }
 
 /* Same black-section treatment the home page gives #fleet / #booking */
 #transfer-fleet,
-#transfer-booking {
+#transfer-booking,
+#chauffeur-fleet,
+#chauffeur-booking {
   background: #050505 !important;
   position: relative;
 }
 
 #transfer-fleet::before,
-#transfer-booking::before {
+#transfer-booking::before,
+#chauffeur-fleet::before,
+#chauffeur-booking::before {
   content: none !important;
 }
 
 #transfer-fleet .section-header,
 #transfer-booking .section-header,
 #transfer-fleet .fleet-grid,
-#transfer-booking .booking-container {
+#transfer-booking .booking-container,
+#chauffeur-fleet .section-header,
+#chauffeur-booking .section-header,
+#chauffeur-fleet .fleet-grid,
+#chauffeur-booking .booking-container {
   position: relative;
   z-index: 1;
 }
 
-#transfer-booking .submit-btn {
+#transfer-booking .submit-btn,
+#chauffeur-booking .submit-btn {
   border: 1.5px solid rgba(185, 150, 74, 0.9);
   background: transparent;
   color: #e6d6a3;
@@ -4240,7 +4254,8 @@ padding-bottom: 2rem;
   transition: all 0.3s ease;
 }
 
-#transfer-booking .submit-btn:hover {
+#transfer-booking .submit-btn:hover,
+#chauffeur-booking .submit-btn:hover {
   background: var(--gradient-gold);
   color: #0b0a08;
   box-shadow:
@@ -4250,7 +4265,7 @@ padding-bottom: 2rem;
 
 /* --- HOW IT WORKS --- */
 .transfer-steps-section {
-  padding: 6rem 5% 2rem;
+  padding: 4rem 5% 2rem;
   position: relative;
   z-index: 10;
 }
@@ -4311,7 +4326,7 @@ padding-bottom: 2rem;
 
 /* --- TRANSFER PRICES --- */
 .transfer-prices-section {
-  padding: 4rem 5% 2rem;
+  padding: 6rem 5% 2rem;
   position: relative;
   z-index: 10;
 }
@@ -4434,8 +4449,19 @@ padding-bottom: 2rem;
 
 /* Native date/time pickers stay legible on the dark form */
 #transfer-booking input[type="date"],
-#transfer-booking input[type="time"] {
+#transfer-booking input[type="time"],
+#chauffeur-booking input[type="date"],
+#chauffeur-booking input[type="time"] {
   color-scheme: dark;
+}
+
+/* Seat count sits under the price row on the chauffeur cards */
+.chauffeur-seats {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.95rem;
+  opacity: 0.85;
 }
 
 /* --- FAQ --- */
