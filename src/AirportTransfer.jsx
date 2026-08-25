@@ -13,11 +13,11 @@ const heroImages = [
 ];
 
 const transferFleet = [
-  { name: "Mercedes-Benz V 300 2025", image: "/slika2.JPG", seats: 8 },
-  { name: "Mercedes-Benz V 300 4x4 Exclusive 2025", image: "/ex_nova.jpg", seats: 7 },
-  { name: "Škoda Superb L&K 2025", image: "/sk3.JPG", seats: 5 },
-  { name: "Škoda Superb 4x4 L&K 2025", image: "/sk_nova.jpg", seats: 5 },
-  { name: "Škoda Superb 4x4 Selection 2025", image: "/sk2.JPG", seats: 5 },
+  { name: "Mercedes-Benz V 300 2025", image: "/slika2.JPG", seats: 8, price: 50 },
+  { name: "Mercedes-Benz V 300 4x4 Exclusive 2025", image: "/ex_nova.jpg", seats: 7, price: 60 },
+  { name: "Škoda Superb L&K 2025", image: "/sk3.JPG", seats: 5, price: 35 },
+  { name: "Škoda Superb 4x4 L&K 2025", image: "/sk_nova.jpg", seats: 5, price: 35 },
+  { name: "Škoda Superb 4x4 Selection 2025", image: "/sk2.JPG", seats: 5, price: 35 },
 ];
 
 export default function AirportTransfer() {
@@ -301,6 +301,7 @@ export default function AirportTransfer() {
       <section className="fleet-section" id="transfer-fleet">
         <div className="section-header">
           <h2 className="section-title">{t("VOZILA ZA TRANSFER")}</h2>
+          <p>{t("Cena je po vozilu, za jedan transfer.")}</p>
         </div>
 
         <div className="fleet-grid">
@@ -312,8 +313,8 @@ export default function AirportTransfer() {
                   <h3>{car.name}</h3>
 
                   <div className="fleet-card-footer">
-                    <div className="transfer-seats">
-                      <i className="fas fa-users"></i> {car.seats} {t("sedišta")}
+                    <div className="fleet-starting-price">
+                      €{car.price}
                     </div>
 
                     <button
@@ -322,6 +323,10 @@ export default function AirportTransfer() {
                     >
                       {t("Izaberi vozilo")}
                     </button>
+                  </div>
+
+                  <div className="transfer-seats chauffeur-seats">
+                    <i className="fas fa-users"></i> {car.seats} {t("sedišta")}
                   </div>
                 </div>
               </div>

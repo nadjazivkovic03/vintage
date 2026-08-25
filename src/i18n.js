@@ -113,8 +113,16 @@ export const translations = {
         "Datum preuzimanja": "Pick-up Date",
         "Datum vraćanja": "Return Date",
         "POŠALJI UPIT": "SEND REQUEST",
+        "UTISCI KLIJENATA": "CLIENT REVIEWS",
+        "Ocene i komentari naših klijenata": "Ratings and comments from our clients",
+        "Placeholder tekst recenzije — zameniti stvarnim komentarom klijenta.":
+          "Placeholder review text — replace with a real client comment.",
         "Automatik": "Automatic",
+        "Manuelni": "Manual",
+        "Benzin": "Petrol",
         "sedišta": "seats",
+        "Dostupno samo za iznajmljivanje bez vozača.":
+          "Available for self-drive rental only.",
 
         /* === AIRPORT TRANSFER LANDING PAGE === */
         "KAKO FUNKCIONISE": "HOW IT WORKS",
@@ -142,6 +150,7 @@ export const translations = {
 
         "CENE TRANSFERA": "TRANSFER PRICES",
         "Cene se odnose na sva vozila": "Prices apply to all vehicles",
+        "Cena je po vozilu, za jedan transfer.": "Price is per vehicle, for one transfer.",
         "Usluga": "Service",
         "Cena": "Price",
         "Aerodrom – Grad": "Airport – City",
@@ -244,7 +253,158 @@ export const translations = {
         "Da li je moguća vožnja van Beograda?":
           "Is driving outside Belgrade possible?",
         "Da. Za duže relacije i vanredne termine cena se dogovara individualno.":
-          "Yes. For longer routes and out-of-hours bookings the price is agreed individually."
+          "Yes. For longer routes and out-of-hours bookings the price is agreed individually.",
+
+        /* === LONG-TERM LEASE LANDING PAGE === */
+        "ZA KOGA": "WHO IT'S FOR",
+        "BRENDOVI": "BRANDS",
+        "PONUDA": "QUOTE",
+        "ZATRAZI PONUDU": "GET A QUOTE",
+        "Zatraži ponudu": "Get a quote",
+        "ZATRAZI VOZILO PO ZAHTEVU": "REQUEST A SPECIFIC VEHICLE",
+        "Dugoročni": "Long-Term",
+        "najam": "Lease",
+        "Dugoročni najam": "Long-Term Lease",
+        "Bilo koje vozilo, za firme i fizička lica — bez troškova vlasništva":
+          "Any vehicle, for companies and individuals — without the costs of ownership",
+
+        "OD 30 DANA": "FROM 30 DAYS",
+        "Minimalni period": "Minimum period",
+        "BILO KOJI BREND": "ANY BRAND",
+        "Po vašem izboru": "Your choice",
+        "PUNO KASKO": "FULL CASCO",
+        "Uključeno u cenu": "Included in the price",
+        "REGISTRACIJA I SERVIS": "REGISTRATION & SERVICING",
+        "Na nama": "On us",
+
+        "ZA KOGA JE DUGOROCNI NAJAM": "WHO LONG-TERM LEASE IS FOR",
+        "Isti uslovi za firme i za fizička lica — razlikuje se samo dokumentacija.":
+          "The same terms for companies and individuals — only the paperwork differs.",
+        "Za pravna lica": "For companies",
+        "Vozila za zaposlene i firmske flote, bez vezivanja kapitala.":
+          "Vehicles for employees and company fleets, without tying up capital.",
+        "Fiksan mesečni trošak, bez skrivenih stavki":
+          "A fixed monthly cost, with no hidden items",
+        "Mogućnost najma više vozila po istom ugovoru":
+          "Several vehicles can be leased under one contract",
+        "Vozila birate vi — bilo koji brend i klasa":
+          "You choose the vehicles — any brand and class",
+        "Registracija, servis i kasko su na nama":
+          "Registration, servicing and casco insurance are on us",
+        "Za fizička lica": "For individuals",
+        "Vozilo na duži period, bez kredita i bez troškova vlasništva.":
+          "A vehicle for a longer period, with no loan and no ownership costs.",
+        "Fiksna cena tokom celog perioda najma":
+          "A fixed price for the whole lease period",
+        "Bez kreditnog zaduženja i amortizacije":
+          "No loan and no depreciation",
+        "Zamensko vozilo u slučaju kvara ili servisa":
+          "A replacement vehicle in case of breakdown or servicing",
+        "Pomoć na putu 24/7 tokom celog najma":
+          "24/7 roadside assistance throughout the lease",
+
+        "BILO KOJI BREND I MODEL": "ANY BRAND AND MODEL",
+        "Ne morate birati samo iz naše flote — vozilo nabavljamo po vašem zahtevu.":
+          "You are not limited to our fleet — we source the vehicle you ask for.",
+        "Mercedes-Benz, BMW, Audi, Volkswagen, Škoda, Toyota i ostali brendovi.":
+          "Mercedes-Benz, BMW, Audi, Volkswagen, Škoda, Toyota and other brands.",
+        "Limuzina, SUV, karavan, kombi ili dostavno vozilo — biramo prema nameni.":
+          "Saloon, SUV, estate, van or light commercial vehicle — chosen to suit the purpose.",
+        "Nova ili polovna vozila, u zavisnosti od budžeta i trajanja ugovora.":
+          "New or used vehicles, depending on your budget and the length of the contract.",
+        "Za veće flote obezbeđujemo više vozila po istom ugovoru.":
+          "For larger fleets we provide several vehicles under one contract.",
+        "Recite nam koje vozilo vam treba i šaljemo ponudu sa cenom.":
+          "Tell us which vehicle you need and we will send a quote with the price.",
+
+        "STA JE UKLJUCENO": "WHAT'S INCLUDED",
+        "Registracija i servis": "Registration & servicing",
+        "Registracija, redovan servis i održavanje vozila su u potpunosti na nama.":
+          "Registration, regular servicing and maintenance are entirely on us.",
+        "Puno kasko osiguranje": "Full casco insurance",
+        "Vozilo je potpuno osigurano tokom celog perioda najma.":
+          "The vehicle is fully insured for the whole lease period.",
+        "Zamensko vozilo": "Replacement vehicle",
+        "U slučaju kvara ili servisa dobijate zamensko vozilo, bez zastoja.":
+          "If the car breaks down or goes in for service you get a replacement — no downtime.",
+        "Pomoć na putu 24/7": "24/7 roadside assistance",
+        "Dostupni smo vam u svakom trenutku, tokom celog trajanja najma.":
+          "We are available to you at any time, for the entire lease.",
+
+        "CENA": "PRICE",
+        "KAKO SE FORMIRA CENA": "HOW THE PRICE IS SET",
+        "Ne radimo sa fiksnim cenovnikom — svaki najam se ugovara posebno.":
+          "We do not work from a fixed price list — every lease is arranged individually.",
+        "Vozilo pribavljamo prema vašem zahtevu, pa se i cena formira za svaki zahtev posebno. Na nju utiču:":
+          "We source the vehicle you ask for, so the price is worked out for each request separately. It depends on:",
+        "Vozilo — brend, model, klasa, godište i nivo opreme.":
+          "The vehicle — brand, model, class, model year and equipment level.",
+        "Broj vozila — za veće flote cena po vozilu je povoljnija.":
+          "The number of vehicles — for larger fleets the price per vehicle is lower.",
+        "Trajanje ugovora — duži period znači nižu mesečnu cenu.":
+          "The length of the contract — a longer period means a lower monthly price.",
+        "Predviđena kilometraža, koja se dogovara ugovorom.":
+          "The expected mileage, which is agreed in the contract.",
+        "Registracija, servis, kasko i pomoć na putu su uvek uključeni u cenu.":
+          "Registration, servicing, casco insurance and roadside assistance are always included in the price.",
+        "Pošaljite zahtev sa vozilom koje vam treba i dobijate ponudu sa konkretnom cenom.":
+          "Send us a request with the vehicle you need and you will receive a quote with a concrete price.",
+        "Cena na upit": "Price on request",
+
+        "Kilometraža se dogovara ugovorom, u skladu sa vašim potrebama.":
+          "Mileage is agreed in the contract, to suit your needs.",
+
+        "VOZILA IZ NASE FLOTE": "VEHICLES FROM OUR FLEET",
+        "Dostupna odmah. Za bilo koje drugo vozilo pošaljite zahtev — cenu dobijate u ponudi.":
+          "Available right away. For any other vehicle send us a request — you get the price in a quote.",
+        "Tražite drugo vozilo? Nabavljamo bilo koji brend i model po zahtevu.":
+          "Looking for a different vehicle? We source any brand and model on request.",
+
+        "ZATRAZITE PONUDU": "REQUEST A QUOTE",
+        "Odgovaramo sa konkretnom cenom u najkraćem roku.":
+          "We reply with a concrete price as soon as possible.",
+        "Tip korisnika": "Customer type",
+        "Pravno lice / firma": "Company",
+        "Fizičko lice": "Individual",
+        "Trajanje najma": "Lease duration",
+        "1–3 meseca": "1–3 months",
+        "3–6 meseci": "3–6 months",
+        "6–12 meseci": "6–12 months",
+        "12+ meseci": "12+ months",
+        "Drugo vozilo (po zahtevu)": "Another vehicle (on request)",
+        "Koje vozilo vam treba?": "Which vehicle do you need?",
+        "Npr. BMW X5, Volkswagen Passat, dostavno vozilo...":
+          "e.g. BMW X5, Volkswagen Passat, a van...",
+        "Željeni početak najma": "Preferred lease start",
+        "Broj vozila": "Number of vehicles",
+        "Predviđena kilometraža mesečno": "Estimated monthly mileage",
+        "Naziv firme": "Company name",
+
+        "Mogu li da dobijem vozilo koje nije u vašoj floti?":
+          "Can I get a vehicle that is not in your fleet?",
+        "Da. Nabavljamo bilo koji brend i model po zahtevu — recite nam koje vozilo vam treba i šaljemo ponudu sa cenom.":
+          "Yes. We source any brand and model on request — tell us which vehicle you need and we will send a quote with the price.",
+        "Da li radite sa firmama i sa fizičkim licima?":
+          "Do you work with both companies and individuals?",
+        "Radimo i sa jednima i sa drugima. Uslovi su isti, razlikuje se samo dokumentacija za ugovor.":
+          "We work with both. The terms are the same; only the contract paperwork differs.",
+        "Koliko traje minimalni period najma?":
+          "What is the minimum lease period?",
+        "Dugoročni najam počinje od 30 dana. Za kraće periode pogledajte standardno iznajmljivanje vozila.":
+          "Long-term lease starts at 30 days. For shorter periods, see our standard car rental.",
+        "Da li su registracija i servis uključeni?":
+          "Are registration and servicing included?",
+        "Kako se određuje kilometraža?": "How is mileage determined?",
+        "Šta ako se vozilo pokvari?": "What if the vehicle breaks down?",
+        "Obezbeđujemo zamensko vozilo kako biste nastavili bez zastoja, uz pomoć na putu 24/7.":
+          "We provide a replacement vehicle so you can carry on without downtime, with 24/7 roadside assistance.",
+        "Da li mogu da iznajmim više vozila odjednom?":
+          "Can I lease several vehicles at once?",
+        "Da. Za veće flote obezbeđujemo više vozila po istom ugovoru — navedite broj vozila u zahtevu.":
+          "Yes. For larger fleets we provide several vehicles under one contract — state the number of vehicles in your request.",
+        "Da li je potreban depozit?": "Is a deposit required?",
+        "Depozit se dogovara u zavisnosti od vozila i trajanja najma.":
+          "The deposit is agreed depending on the vehicle and the length of the lease."
     }
   };
   

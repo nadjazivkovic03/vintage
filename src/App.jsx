@@ -2,6 +2,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import ThankYou from "./thankyou";
 import AirportTransfer from "./AirportTransfer";
 import Chauffeur from "./Chauffeur";
+import LongTermLease from "./LongTermLease";
 import { useLang } from "./LanguageContext";
 import ReservationModal from "./ReservationModal";
 
@@ -11,6 +12,52 @@ import './styles/global.css';
 import logo from './assets/images/logo7.PNG';
 
 import { useState, useEffect } from "react";
+
+/* ============================================================
+   !!! PLACEHOLDER RECENZIJE — NISU STVARNE !!!
+   Ovo su primeri teksta, samo da bi se videlo kako sekcija izgleda.
+   OBAVEZNO zameniti stvarnim recenzijama klijenata (npr. prepisati
+   Google recenzije) PRE nego sto sajt ode uzivo.
+   Objavljivanje izmisljenih recenzija je zabranjeno zakonom.
+   ============================================================ */
+const reviews = [
+  {
+    name: "Ime P.",
+    service: "Aerodrom Transfer",
+    stars: 5,
+    text: "Placeholder tekst recenzije — zameniti stvarnim komentarom klijenta.",
+  },
+  {
+    name: "Ime P.",
+    service: "Vozilo sa vozačem",
+    stars: 5,
+    text: "Placeholder tekst recenzije — zameniti stvarnim komentarom klijenta.",
+  },
+  {
+    name: "Ime P.",
+    service: "Iznajmljivanje luksuznog vozila",
+    stars: 5,
+    text: "Placeholder tekst recenzije — zameniti stvarnim komentarom klijenta.",
+  },
+  {
+    name: "Ime P.",
+    service: "Aerodrom Transfer",
+    stars: 5,
+    text: "Placeholder tekst recenzije — zameniti stvarnim komentarom klijenta.",
+  },
+  {
+    name: "Ime P.",
+    service: "Dugoročni najam",
+    stars: 5,
+    text: "Placeholder tekst recenzije — zameniti stvarnim komentarom klijenta.",
+  },
+  {
+    name: "Ime P.",
+    service: "Vozilo sa vozačem",
+    stars: 5,
+    text: "Placeholder tekst recenzije — zameniti stvarnim komentarom klijenta.",
+  },
+];
 
 const heroImages = [
   '/slika3.JPG',
@@ -338,6 +385,28 @@ export default function App() {
       </div>
     </div>
 
+    {/* LONG-TERM LEASE */}
+    <div className="service-card">
+      <div className="service-icon">
+        <i className="fas fa-calendar-alt"></i>
+      </div>
+      <h3 className="service-title">
+        {t("Dugoročni najam")}
+      </h3>
+      <p className="service-description">
+        {t("Bilo koje vozilo, za firme i fizička lica — bez troškova vlasništva")}
+      </p>
+
+      <div className="service-cta">
+        <Link to="/dugorocni-najam" className="service-link">
+          {t("Detaljnije")} <i className="fas fa-arrow-right"></i>
+        </Link>
+        <button className="service-btn" onClick={() => scrollToSection("booking")}>
+          {t("Zakazi")}
+        </button>
+      </div>
+    </div>
+
         </div>
       </section>
             {/* === FLEET SECTION === */}
@@ -379,7 +448,7 @@ export default function App() {
             <div className="service-back">
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
-                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€270</strong></div>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€230</strong></div>
               </div>
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
@@ -423,7 +492,7 @@ export default function App() {
             <div className="service-back">
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
-                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€300</strong></div>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€250</strong></div>
               </div>
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
@@ -467,7 +536,7 @@ export default function App() {
             <div className="service-back">
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
-                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€220</strong></div>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€190</strong></div>
               </div>
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
@@ -511,7 +580,7 @@ export default function App() {
             <div className="service-back">
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
-                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€240</strong></div>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€200</strong></div>
               </div>
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
@@ -555,7 +624,7 @@ export default function App() {
             <div className="service-back">
               <div className="price-block">
                 <h4>{t("Sa vozačem (8 sati) - domet 250km")}</h4>
-                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€220</strong></div>
+                <div className="price-line"><span>{t("Fiksna cena")}</span><strong>€190</strong></div>
               </div>
               <div className="price-block">
                 <h4>{t("Bez vozača")}</h4>
@@ -565,6 +634,48 @@ export default function App() {
                 <div className="price-line"><span>16–31 {t("dana")}</span><strong>€65</strong></div>
                 <div className="price-line"><span>31+ {t("dana")}</span><strong>€55</strong></div>
               </div>
+              <button className="luxury-btn back-btn" onClick={toggleServicePrice}>{t("Nazad")}</button>
+            </div>
+          </div>
+
+          {/* AUDI A3 SPORTBACK — SAMO IZNAJMLJIVANJE (bez vozača) */}
+          <div className="fleet-card price-card">
+            <div className="service-front">
+              <img src="/audi_a3.jpg" alt="Audi A3 Sportback" className="card-image" />
+              <div className="card-content">
+                <h3>Audi A3 Sportback 2025</h3>
+                <div className="fleet-card-footer">
+                <div className="fleet-starting-price">
+                  <span>{t("Od")}</span> €35<span>/{t("dan")}</span>
+                </div>
+
+                <button
+                  className="luxury-btn"
+                  onClick={() =>
+                    openReservation({
+                      name: "Audi A3 Sportback 2025",
+                      image: "audi_a3.jpg",
+                      price: 35,
+                      seats: 5,
+                      fuel: "Benzin"
+                    })
+                  }
+                >
+                  {t("REZERVISI")}
+                </button>
+              </div>
+              </div>
+            </div>
+            <div className="service-back">
+              <div className="price-block">
+                <h4>{t("Bez vozača")}</h4>
+                <div className="price-line"><span>1–3 {t("dana")}</span><strong>€70</strong></div>
+                <div className="price-line"><span>4–7 {t("dana")}</span><strong>€55</strong></div>
+                <div className="price-line"><span>8–15 {t("dana")}</span><strong>€48</strong></div>
+                <div className="price-line"><span>16–31 {t("dana")}</span><strong>€40</strong></div>
+                <div className="price-line"><span>31+ {t("dana")}</span><strong>€35</strong></div>
+              </div>
+              <p className="rental-only-note">{t("Dostupno samo za iznajmljivanje bez vozača.")}</p>
               <button className="luxury-btn back-btn" onClick={toggleServicePrice}>{t("Nazad")}</button>
             </div>
           </div>
@@ -692,6 +803,7 @@ export default function App() {
           <option>Škoda Superb L&amp;K 2025</option>
           <option>Škoda Superb 4x4 L&amp;K 2025</option>
           <option>Škoda Superb 4x4 Selection 2025</option>
+          <option>Audi A3 Sportback 2025</option>
         </select>
       </div>
     </>
@@ -781,6 +893,41 @@ export default function App() {
         </div>
       </section>
 
+      {/* === REVIEWS SECTION === */}
+      <section className="reviews-section" id="reviews">
+        <div className="section-header">
+          <h2 className="section-title">{t("UTISCI KLIJENATA")}</h2>
+          <p>{t("Ocene i komentari naših klijenata")}</p>
+        </div>
+
+        <div className="reviews-grid">
+          {reviews.map((review, i) => (
+            <div className="review-card" key={i}>
+              <div
+                className="review-stars"
+                aria-label={`${review.stars} / 5`}
+              >
+                {Array.from({ length: review.stars }, (_, s) => (
+                  <i className="fas fa-star" key={s}></i>
+                ))}
+              </div>
+
+              <p className="review-text">{t(review.text)}</p>
+
+              <div className="review-author">
+                <span className="review-avatar" aria-hidden="true">
+                  {review.name.charAt(0)}
+                </span>
+                <div className="review-author-info">
+                  <strong>{review.name}</strong>
+                  <span>{t(review.service)}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* === CONTACT SECTION === */}
       <section className="contact-section" id="contact">
       <div className="section-header">
@@ -848,6 +995,10 @@ export default function App() {
      {/* CHAUFFEUR SERVICE LANDING PAGE */}
      <Route path="/chauffeur-service" element={<Chauffeur />} />
      <Route path="/vozilo-sa-vozacem" element={<Chauffeur />} />
+
+     {/* LONG-TERM LEASE LANDING PAGE */}
+     <Route path="/long-term-lease" element={<LongTermLease />} />
+     <Route path="/dugorocni-najam" element={<LongTermLease />} />
 
      {/* THANK YOU PAGE */}
      <Route path="/thank-you" element={<ThankYou />} />

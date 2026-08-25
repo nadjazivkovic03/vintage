@@ -54,8 +54,8 @@ export default function ReservationModal({
   
 
             <div className="car-specs">
-              <span>{t("Automatik")}</span>
-              <span>Diesel</span>        
+              <span>{t(car.transmission || "Automatik")}</span>
+              <span>{t(car.fuel || "Diesel")}</span>
               <span>{car.seats} {t("sedišta")}</span>
             </div>
 

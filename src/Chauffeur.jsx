@@ -13,11 +13,11 @@ const heroImages = [
 ];
 
 const chauffeurFleet = [
-  { name: "Mercedes-Benz V 300 2025", image: "/slika2.JPG", seats: 8, price: 270 },
-  { name: "Mercedes-Benz V 300 4x4 Exclusive 2025", image: "/ex_nova.jpg", seats: 7, price: 300 },
-  { name: "Škoda Superb L&K 2025", image: "/sk3.JPG", seats: 5, price: 220 },
-  { name: "Škoda Superb 4x4 L&K 2025", image: "/sk_nova.jpg", seats: 5, price: 240 },
-  { name: "Škoda Superb 4x4 Selection 2025", image: "/sk2.JPG", seats: 5, price: 220 },
+  { name: "Mercedes-Benz V 300 2025", image: "/slika2.JPG", seats: 8, price: 230 },
+  { name: "Mercedes-Benz V 300 4x4 Exclusive 2025", image: "/ex_nova.jpg", seats: 7, price: 250 },
+  { name: "Škoda Superb L&K 2025", image: "/sk3.JPG", seats: 5, price: 190 },
+  { name: "Škoda Superb 4x4 L&K 2025", image: "/sk_nova.jpg", seats: 5, price: 200 },
+  { name: "Škoda Superb 4x4 Selection 2025", image: "/sk2.JPG", seats: 5, price: 190 },
 ];
 
 export default function Chauffeur() {
@@ -47,7 +47,7 @@ export default function Chauffeur() {
     const previousDescription = meta.getAttribute("content");
     meta.setAttribute(
       "content",
-      "Hire a luxury car with a professional chauffeur in Belgrade. Fixed 8-hour packages with a 250 km range, Mercedes V Class and Škoda Superb vehicles, from €220."
+      "Hire a luxury car with a professional chauffeur in Belgrade. Fixed 8-hour packages with a 250 km range, Mercedes V Class and Škoda Superb vehicles, from €190."
     );
 
     return () => {
